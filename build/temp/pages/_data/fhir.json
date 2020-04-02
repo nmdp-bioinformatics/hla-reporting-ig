@@ -1,0 +1,42 @@
+{
+  "path": "http://hl7.org/fhir/R4/",
+  "canonical": "http://fhir.nmdp.org/ig/hla-reporting",
+  "igId": "hla-reporting",
+  "igName": "HLAReportingImplementationGuide",
+  "packageId": "hla-reporting",
+  "igVer": "0.1.0",
+  "errorCount": 4,
+  "version": "4.0.1",
+  "revision": "a53ec6ee1b",
+  "versionFull": "4.0.1-a53ec6ee1b",
+  "toolingVersion": "4.2.0",
+  "toolingRevision": "3",
+  "toolingVersionFull": "4.2.0 (3)",
+  "totalFiles": 9,
+  "processedFiles": 26,
+  "genDate": "Thu, Apr 2, 2020 14:45-0500",
+  "genDay": "02/04/2020",
+  "ig": {
+    "id": "hla-reporting",
+    "name": "HLAReportingImplementationGuide",
+    "title": "HLA Reporting Implementation Guide",
+    "url": "http://fhir.nmdp.org/ig/hla-reporting/ImplementationGuide/hla-reporting",
+    "version": "0.1.0",
+    "status": "active",
+    "experimental": false,
+    "publisher": "NMDP/Be The Match",
+    "gitstatus": "",
+    "contact": [
+      {
+        "name": "Bob Milius",
+        "telecom": [
+          "bmilius@nmdp.org"
+        ]
+      }
+    ],
+    "date": "2020-04-02T14:45:05-05:00",
+    "description": "How to report HLA genotyping using FHIR",
+    "fhirVersion": "4.0.1"
+  },
+  "uf122090ab20d4756b6c8db1988c28a7f": "http://hl7.org/fhir/uv/genomics-reporting"
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="HLA-A-GenotypeExample1"/>
+  <meta>
+    <profile value="http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-genotype"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: HLA-A-GenotypeExample1</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'laboratory' = 'Laboratory)</span></p><p><b>code</b>: Genotype display name <span style="background: LightGoldenRodYellow">(Details : {LOINC code '84413-4' = 'Genotype display name)</span></p><p><b>value</b>: hla#3.25.0#HLA-A*01:01:01:01/HLA-A*24:02:01:01 <span style="background: LightGoldenRodYellow">(Details : {https://glstring.org code 'hla#3.25.0#HLA-A*01:01:01:01/HLA-A*24:02:01:01' = 'hla#3.25.0#HLA-A*01:01:01:01/HLA-A*24:02:01:01)</span></p><h3>Components</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Gene studied [ID] <span style="background: LightGoldenRodYellow">(Details : {LOINC code '48018-6' = 'Gene studied [ID])</span></td><td>HLA-A <span style="background: LightGoldenRodYellow">(Details : {http://www.genenames.org/geneId code 'HGNC:4931' = 'HGNC:4931', given as 'HLA-A'})</span></td></tr></table></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="84413-4"/>
+    </coding>
+  </code>
+  <valueCodeableConcept>
+    <coding>
+      <system value="https://glstring.org"/>
+      <code value="hla#3.25.0#HLA-A*01:01:01:01/HLA-A*24:02:01:01"/>
+    </coding>
+  </valueCodeableConcept>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="48018-6"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://www.genenames.org/geneId"/>
+        <code value="HGNC:4931"/>
+        <display value="HLA-A"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+</Observation>

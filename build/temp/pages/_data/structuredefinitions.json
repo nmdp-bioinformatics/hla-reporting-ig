@@ -1,0 +1,62 @@
+{
+  "hla-genotype": {
+    "index": 0,
+    "url": "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-genotype",
+    "name": "HLAGenotype",
+    "path": "StructureDefinition-hla-genotype.html",
+    "kind": "resource",
+    "type": "Observation",
+    "base": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genotype",
+    "basename": "Genotype",
+    "basepath": "http://hl7.org/fhir/uv/genomics-reporting/STU1/genotype.html",
+    "status": "active",
+    "date": "Thu Apr 02 14:45:05 CDT 2020",
+    "publisher": "NMDP/Be The Match",
+    "description": "HLA Genotype profile of genotype observation"
+  },
+  "hla-molecularsequence": {
+    "index": 1,
+    "url": "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-molecularsequence",
+    "name": "HLAMolecularSequence",
+    "path": "StructureDefinition-hla-molecularsequence.html",
+    "kind": "resource",
+    "type": "MolecularSequence",
+    "base": "http://hl7.org/fhir/StructureDefinition/MolecularSequence",
+    "basename": "MolecularSequence",
+    "basepath": "http://hl7.org/fhir/R4/molecularsequence.html",
+    "status": "active",
+    "date": "Thu Apr 02 14:45:05 CDT 2020",
+    "publisher": "NMDP/Be The Match",
+    "description": "HLA profile of MolecularSequence resource"
+  },
+  "hla-summary-report": {
+    "index": 2,
+    "url": "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-summary-report",
+    "name": "HLASummaryReport",
+    "path": "StructureDefinition-hla-summary-report.html",
+    "kind": "resource",
+    "type": "DiagnosticReport",
+    "base": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-report",
+    "basename": "GenomicsReport",
+    "basepath": "http://hl7.org/fhir/uv/genomics-reporting/STU1/genomics-report.html",
+    "status": "active",
+    "date": "Thu Apr 02 14:45:05 CDT 2020",
+    "publisher": "NMDP/Be The Match",
+    "description": "HLA Summary Report profile of genomics report"
+  },
+  "hla-allele": {
+    "index": 3,
+    "url": "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-allele",
+    "name": "HLAallele",
+    "path": "StructureDefinition-hla-allele.html",
+    "kind": "resource",
+    "type": "Observation",
+    "base": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/haplotype",
+    "basename": "Haplotype",
+    "basepath": "http://hl7.org/fhir/uv/genomics-reporting/STU1/haplotype.html",
+    "status": "active",
+    "date": "Thu Apr 02 14:45:05 CDT 2020",
+    "publisher": "NMDP/Be The Match",
+    "description": "HLA Allele profile of haplotype observation"
+  }
+}

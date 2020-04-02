@@ -1,0 +1,15 @@
+{
+  "package-id": "hla-reporting",
+  "title": "HLA Reporting Implementation Guide",
+  "canonical": "http://fhir.nmdp.org/ig/hla-reporting",
+  "introduction": "An example of how FSH can be used to create an HLA reporting IG by constraing the genomics-reporting IG",
+  "list": [
+    {
+      "version": "current",
+      "desc": "Draft",
+      "path": "http://fhir.nmdp.org/ig/hla-reporting",
+      "status": "ci-build",
+      "current": true
+    }
+  ]
+}

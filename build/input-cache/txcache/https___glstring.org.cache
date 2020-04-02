@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://glstring.org",
+  "code" : "hla#3.25.0#HLA-A*01:01:01:01/HLA-A*24:02:01:01"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"https://glstring.org\" is not known (encountered paired with code = \"hla#3.25.0#HLA-A*01:01:01:01/HLA-A*24:02:01:01\"); The code provided (https://glstring.org#hla#3.25.0#HLA-A*01:01:01:01/HLA-A*24:02:01:01) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------

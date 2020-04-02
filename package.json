@@ -1,0 +1,27 @@
+{
+  "name": "hla-reporting",
+  "version": "0.1.0",
+  "canonical": "http://fhir.nmdp.org/ig/hla-reporting",
+  "url": "http://fhir.nmdp.org/ig/hla-reporting",
+  "title": "HLA Reporting Implementation Guide",
+  "description": "How to report HLA genotyping using FHIR",
+  "dependencies": {
+    "hl7.fhir.r4.core": "4.0.1",
+    "hl7.fhir.uv.genomics-reporting": "1.0.0"
+  },
+  "keywords": [
+    "HLA",
+    "Genotype",
+    "Lab results",
+    "genomics reporting"
+  ],
+  "language": "en",
+  "author": "NMDP/Be The Match",
+  "maintainers": [
+    {
+      "name": "Bob Milius",
+      "email": "bmilius@nmdp.org"
+    }
+  ],
+  "license": "CC0-1.0"
+}

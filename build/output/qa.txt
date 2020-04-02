@@ -1,0 +1,99 @@
+﻿HLAReportingImplementationGuide : Validation Results
+=========================================
+
+err = 8, warn = 6, info = 4
+IG Publisher Version: v1.0.76-SNAPSHOT Out of date - current version is v1.0.77-SNAPSHOT
+Generated Thu Apr 02 14:45:28 CDT 2020. FHIR version 4.0.1 for hla-reporting#0.1.0 (canonical = http://fhir.nmdp.org/ig/hla-reporting)
+
+ Build Errors : 62 / 0
+ /Users/bmilius/Documents/src/fsh/hla/build/input/ImplementationGuide-hla-reporting : 0 / 0
+ /Users/bmilius/Documents/src/fsh/hla/build/input/examples/observation-HLA-A-GenotypeExample1 : 3 / 2
+ /Users/bmilius/Documents/src/fsh/hla/build/input/profiles/structuredefinition-hla-allele : 0 / 1
+ /Users/bmilius/Documents/src/fsh/hla/build/input/profiles/structuredefinition-hla-genotype : 0 / 0
+ /Users/bmilius/Documents/src/fsh/hla/build/input/profiles/structuredefinition-hla-molecularsequence : 0 / 1
+ /Users/bmilius/Documents/src/fsh/hla/build/input/profiles/structuredefinition-hla-summary-report : 0 / 1
+ /Users/bmilius/Documents/src/fsh/hla/build/input/vocabulary/codesystem-glstring-codesystem : 0 / 0
+ /Users/bmilius/Documents/src/fsh/hla/build/input/vocabulary/codesystem-hla-genename-codesystem : 0 / 0
+ /Users/bmilius/Documents/src/fsh/hla/build/input/vocabulary/valueset-hla-geneid-valueset : 1 / 0
+</table>
+== n/a ==
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/CodeSystem-glstring-codesystem.html#/html/body/div/div/div/p/a at Line 175, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/CodeSystem-glstring-codesystem.json.html#/html/body/div/div/div/p/a at Line 188, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/CodeSystem-glstring-codesystem.ttl.html#/html/body/div/div/div/p/a at Line 199, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/CodeSystem-glstring-codesystem.xml.html#/html/body/div/div/div/p/a at Line 185, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/CodeSystem-hla-genename-codesystem.html#/html/body/div/div/div/p/a at Line 178, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/CodeSystem-hla-genename-codesystem.json.html#/html/body/div/div/div/p/a at Line 410, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/CodeSystem-hla-genename-codesystem.ttl.html#/html/body/div/div/div/p/a at Line 420, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/CodeSystem-hla-genename-codesystem.xml.html#/html/body/div/div/div/p/a at Line 428, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/Observation-HLA-A-GenotypeExample1.html#/html/body/div/div/div/p/a at Line 174, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/Observation-HLA-A-GenotypeExample1.json.html#/html/body/div/div/div/p/a at Line 219, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/Observation-HLA-A-GenotypeExample1.ttl.html#/html/body/div/div/div/p/a at Line 223, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/Observation-HLA-A-GenotypeExample1.xml.html#/html/body/div/div/div/p/a at Line 204, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-allele-definitions.html#/html/body/div/div/div/p/a at Line 1230, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-allele-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 211, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-allele-mappings.html#/html/body/div/div/div/p/a at Line 417, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-allele.html#/html/body/div/div/div/p/a at Line 939, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-allele.json.html#/html/body/div/div/div/p/a at Line 5254, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-allele.profile.json.html#/html/body/div/div/div/p/a at Line 5303, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-allele.profile.ttl.html#/html/body/div/div/div/p/a at Line 4635, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-allele.profile.xml.html#/html/body/div/div/div/p/a at Line 4823, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-allele.ttl.html#/html/body/div/div/div/p/a at Line 4585, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-allele.xml.html#/html/body/div/div/div/p/a at Line 4770, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-genotype-definitions.html#/html/body/div/div/div/p/a at Line 1230, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-genotype-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 222, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-genotype-mappings.html#/html/body/div/div/div/p/a at Line 417, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-genotype.html#/html/body/div/div/div/p/a at Line 939, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-genotype.json.html#/html/body/div/div/div/p/a at Line 5259, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-genotype.profile.json.html#/html/body/div/div/div/p/a at Line 5308, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-genotype.profile.ttl.html#/html/body/div/div/div/p/a at Line 4638, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-genotype.profile.xml.html#/html/body/div/div/div/p/a at Line 4827, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-genotype.ttl.html#/html/body/div/div/div/p/a at Line 4588, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-genotype.xml.html#/html/body/div/div/div/p/a at Line 4774, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-molecularsequence-definitions.html#/html/body/div/div/div/p/a at Line 1017, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-molecularsequence-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 211, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-molecularsequence-mappings.html#/html/body/div/div/div/p/a at Line 251, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-molecularsequence.html#/html/body/div/div/div/div/div/table/tr/td/span/div/div/div/p/a at Line 891, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-molecularsequence.json.html#/html/body/div/div/div/p/a at Line 3940, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-molecularsequence.profile.json.html#/html/body/div/div/div/p/a at Line 3989, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-molecularsequence.profile.ttl.html#/html/body/div/div/div/p/a at Line 3557, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-molecularsequence.profile.xml.html#/html/body/div/div/div/p/a at Line 3529, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-molecularsequence.ttl.html#/html/body/div/div/div/p/a at Line 3507, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-molecularsequence.xml.html#/html/body/div/div/div/p/a at Line 3476, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-summary-report-definitions.html#/html/body/div/div/div/p/a at Line 1009, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-summary-report-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 211, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-summary-report-mappings.html#/html/body/div/div/div/p/a at Line 378, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-summary-report.html#/html/body/div/div/div/p/a at Line 817, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-summary-report.json.html#/html/body/div/div/div/p/a at Line 4166, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-summary-report.profile.json.html#/html/body/div/div/div/p/a at Line 4215, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-summary-report.profile.ttl.html#/html/body/div/div/div/p/a at Line 3866, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-summary-report.profile.xml.html#/html/body/div/div/div/p/a at Line 3719, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-summary-report.ttl.html#/html/body/div/div/div/p/a at Line 3816, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/StructureDefinition-hla-summary-report.xml.html#/html/body/div/div/div/p/a at Line 3666, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/ValueSet-hla-geneid-valueset.html#/html/body/div/div/div/p/a at Line 216, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/ValueSet-hla-geneid-valueset.json.html#/html/body/div/div/div/p/a at Line 370, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/ValueSet-hla-geneid-valueset.ttl.html#/html/body/div/div/div/p/a at Line 334, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/ValueSet-hla-geneid-valueset.xml.html#/html/body/div/div/div/p/a at Line 364, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/artifacts.html#/html/body/div/div/div/p/a at Line 269, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/background.html#/html/body/div/div/div/p/a at Line 159, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/downloads.html#/html/body/div/div/div/p/a at Line 159, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/index.html#/html/body/div/div/div/p/a at Line 393, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/spec.html#/html/body/div/div/div/p/a at Line 159, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+ERROR: /Users/bmilius/Documents/src/fsh/hla/build/output/toc.html#/html/body/div/div/div/p/a at Line 148, column 28: The link 'bmilius@nmdp.org' for "NMDP/Be The Match" cannot be resolved
+== /Users/bmilius/Documents/src/fsh/hla/build/input/ImplementationGuide-hla-reporting.json ==
+== /Users/bmilius/Documents/src/fsh/hla/build/input/examples/Observation-HLA-A-GenotypeExample1.json ==
+INFORMATION: Observation/HLA-A-GenotypeExample1: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI "https://glstring.org" is unknown so the code cannot be validated
+ERROR: Observation/HLA-A-GenotypeExample1: Observation.value.ofType(CodeableConcept).coding[0]: Unsupported fixed pattern type for discriminator(system) for slice Observation.value[x]:valueCodeableConcept.coding:GL: org.hl7.fhir.r5.model.UriType
+INFORMATION: Observation/HLA-A-GenotypeExample1: Observation.value.ofType(CodeableConcept): Profile http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-genotype, Element 'Observation.value.ofType(CodeableConcept).coding[GL]'": Unable to check minimum required (1) due to lack of slicing validation
+ERROR: Observation/HLA-A-GenotypeExample1: Observation.component[0].value.ofType(CodeableConcept): None of the codes provided are in the value set http://fhir.nmdp.org/ig/hla-reporting/ValueSet/hla-geneid-valueset (http://fhir.nmdp.org/ig/hla-reporting/ValueSet/hla-geneid-valueset, and a code from this value set is required) (codes = http://www.genenames.org/geneId#HGNC:4931)
+ERROR: Observation/HLA-A-GenotypeExample1: Observation.component[0].value.ofType(CodeableConcept).coding[0]: The code system "http://www.genenames.org/geneId" is not known (encountered paired with code = "HGNC:4931"); The code provided (http://www.genenames.org/geneId#HGNC:4931) is not  valid in the value set All codes known to the system for "http://www.genenames.org/geneId#HGNC:4931"
+== /Users/bmilius/Documents/src/fsh/hla/build/input/profiles/StructureDefinition-hla-allele.json ==
+WARNING: http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-allele: The Implementation Guide contains no examples for this profile
+== /Users/bmilius/Documents/src/fsh/hla/build/input/profiles/StructureDefinition-hla-genotype.json ==
+== /Users/bmilius/Documents/src/fsh/hla/build/input/profiles/StructureDefinition-hla-molecularsequence.json ==
+WARNING: http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-molecularsequence: The Implementation Guide contains no examples for this profile
+== /Users/bmilius/Documents/src/fsh/hla/build/input/profiles/StructureDefinition-hla-summary-report.json ==
+WARNING: http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-summary-report: The Implementation Guide contains no examples for this profile
+== /Users/bmilius/Documents/src/fsh/hla/build/input/vocabulary/CodeSystem-glstring-codesystem.json ==
+== /Users/bmilius/Documents/src/fsh/hla/build/input/vocabulary/CodeSystem-hla-genename-codesystem.json ==
+== /Users/bmilius/Documents/src/fsh/hla/build/input/vocabulary/ValueSet-hla-geneid-valueset.json ==
+ERROR: hla-geneid-valueset: Error from server: Unable to provide support for code system http://www.genenames.org/geneId

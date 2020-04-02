@@ -1,0 +1,14 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "GLStringCS",
+  "id": "glstring-codesystem",
+  "title": "Genotype List String Code CodeSystem",
+  "description": "Genotype List String Codesystem used for HLA reporting",
+  "version": "1.0",
+  "url": "http://www.glstring.org",
+  "compositional": true,
+  "copyright": "National Marrow Donor Program",
+  "publisher": "NMDP/CIBMTR"
+}

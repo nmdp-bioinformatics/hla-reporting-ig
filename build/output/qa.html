@@ -1,0 +1,357 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 62, errors = 4, warn = 3, info = 2 -->
+<head>
+  <title>HLAReportingImplementationGuide : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for HLAReportingImplementationGuide</h1>
+ <p>Generated Thu Apr 02 14:45:28 CDT 2020, FHIR version 4.0.1 for hla-reporting#0.1.0 (canonical = <a href="http://fhir.nmdp.org/ig/hla-reporting">http://fhir.nmdp.org/ig/hla-reporting</a> (<a href="http://fhir.nmdp.org/ig/hla-reporting/history.html">history</a>))</p>
+<p style="background-color: #ffcccc">IG Publisher Version: v1.0.76-SNAPSHOT, which is out of date. The current version is v1.0.77-SNAPSHOT <a href="https://fhir.github.io/latest-ig-publisher/org.hl7.fhir.publisher.jar">Download Latest</a></p>
+<p>No Suppressed Errors</p>
+ <p>HL7 Publication check:</p> <ul><li>n/a - not an HL7.org or FHIR.org implementation guide</li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Information messages &amp; Warnings</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>62</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_bmilius_Documents_src_fsh_hla_build_input_ImplementationGuide-hla-reporting"><b>/Users/bmilius/Documents/src/fsh/hla/build/input/ImplementationGuide-hla-reporting</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_bmilius_Documents_src_fsh_hla_build_input_examples_observation-HLA-A-GenotypeExample1"><b>/Users/bmilius/Documents/src/fsh/hla/build/input/examples/observation-HLA-A-GenotypeExample1</b></a></td><td><b>3</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_bmilius_Documents_src_fsh_hla_build_input_profiles_structuredefinition-hla-allele"><b>/Users/bmilius/Documents/src/fsh/hla/build/input/profiles/structuredefinition-hla-allele</b></a></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_bmilius_Documents_src_fsh_hla_build_input_profiles_structuredefinition-hla-genotype"><b>/Users/bmilius/Documents/src/fsh/hla/build/input/profiles/structuredefinition-hla-genotype</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_bmilius_Documents_src_fsh_hla_build_input_profiles_structuredefinition-hla-molecularsequence"><b>/Users/bmilius/Documents/src/fsh/hla/build/input/profiles/structuredefinition-hla-molecularsequence</b></a></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_bmilius_Documents_src_fsh_hla_build_input_profiles_structuredefinition-hla-summary-report"><b>/Users/bmilius/Documents/src/fsh/hla/build/input/profiles/structuredefinition-hla-summary-report</b></a></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_bmilius_Documents_src_fsh_hla_build_input_vocabulary_codesystem-glstring-codesystem"><b>/Users/bmilius/Documents/src/fsh/hla/build/input/vocabulary/codesystem-glstring-codesystem</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_bmilius_Documents_src_fsh_hla_build_input_vocabulary_codesystem-hla-genename-codesystem"><b>/Users/bmilius/Documents/src/fsh/hla/build/input/vocabulary/codesystem-hla-genename-codesystem</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_bmilius_Documents_src_fsh_hla_build_input_vocabulary_valueset-hla-geneid-valueset"><b>/Users/bmilius/Documents/src/fsh/hla/build/input/vocabulary/valueset-hla-geneid-valueset</b></a></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a></h2>
+ <table class="grid">
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-glstring-codesystem.html#b086e359-7e73-44b5-b9f6-a4fc3364b488">CodeSystem-glstring-codesystem.html#/html/body/div/div/div/p/a at Line 175, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-glstring-codesystem.json.html#03cd0da9-0643-4a36-9c29-32f11ed94076">CodeSystem-glstring-codesystem.json.html#/html/body/div/div/div/p/a at Line 188, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-glstring-codesystem.ttl.html#8822a728-56b2-4de6-aacc-f44ff6791a39">CodeSystem-glstring-codesystem.ttl.html#/html/body/div/div/div/p/a at Line 199, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-glstring-codesystem.xml.html#5b0561f3-afc3-4281-91d4-8a2bcc7bab1f">CodeSystem-glstring-codesystem.xml.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-hla-genename-codesystem.html#6663820d-0898-42ce-9a08-12213fc1a642">CodeSystem-hla-genename-codesystem.html#/html/body/div/div/div/p/a at Line 178, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-hla-genename-codesystem.json.html#faec160e-aafb-4d30-94bd-a80973ee4cf2">CodeSystem-hla-genename-codesystem.json.html#/html/body/div/div/div/p/a at Line 410, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-hla-genename-codesystem.ttl.html#4e49ed85-c8ae-486e-8589-08c4f5dadf48">CodeSystem-hla-genename-codesystem.ttl.html#/html/body/div/div/div/p/a at Line 420, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-hla-genename-codesystem.xml.html#4e370783-019b-4d17-94b3-fb5ac2dce4bd">CodeSystem-hla-genename-codesystem.xml.html#/html/body/div/div/div/p/a at Line 428, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-HLA-A-GenotypeExample1.html#a46d07f8-b121-47bd-b74a-3fb7ac26ec23">Observation-HLA-A-GenotypeExample1.html#/html/body/div/div/div/p/a at Line 174, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-HLA-A-GenotypeExample1.json.html#832e540d-f554-4fed-bce1-aafc70a44363">Observation-HLA-A-GenotypeExample1.json.html#/html/body/div/div/div/p/a at Line 219, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-HLA-A-GenotypeExample1.ttl.html#1b868268-ec6c-48f7-92fc-a1495c4b2e81">Observation-HLA-A-GenotypeExample1.ttl.html#/html/body/div/div/div/p/a at Line 223, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-HLA-A-GenotypeExample1.xml.html#ff9f535a-167d-4091-89a1-d3c8c8cea34c">Observation-HLA-A-GenotypeExample1.xml.html#/html/body/div/div/div/p/a at Line 204, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-allele-definitions.html#655ac66a-fed3-4dcb-a009-a8e00ab3f0a9">StructureDefinition-hla-allele-definitions.html#/html/body/div/div/div/p/a at Line 1230, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-allele-examples.html#e73f1d78-27f2-4f0b-a40f-924d53b6f835">StructureDefinition-hla-allele-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 211, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-allele-mappings.html#594ebec4-6af5-4f83-bb41-5304d391535b">StructureDefinition-hla-allele-mappings.html#/html/body/div/div/div/p/a at Line 417, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-allele.html#58e6589f-dd66-46f6-9cd8-ed2a139c88ab">StructureDefinition-hla-allele.html#/html/body/div/div/div/p/a at Line 939, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-allele.json.html#6501067c-6017-4ffd-a5da-33e7fbd67236">StructureDefinition-hla-allele.json.html#/html/body/div/div/div/p/a at Line 5254, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-allele.profile.json.html#e9422571-470f-40c6-b98c-f18b7630242c">StructureDefinition-hla-allele.profile.json.html#/html/body/div/div/div/p/a at Line 5303, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-allele.profile.ttl.html#54e20c86-5021-4aa5-93f1-eded12445847">StructureDefinition-hla-allele.profile.ttl.html#/html/body/div/div/div/p/a at Line 4635, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-allele.profile.xml.html#0cfd2667-eb03-42ec-8074-e004759dba50">StructureDefinition-hla-allele.profile.xml.html#/html/body/div/div/div/p/a at Line 4823, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-allele.ttl.html#81b49fef-8898-48f9-b666-cb3763ebf3ba">StructureDefinition-hla-allele.ttl.html#/html/body/div/div/div/p/a at Line 4585, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-allele.xml.html#226598c1-b350-4e8e-b1c8-a60c320a8fb7">StructureDefinition-hla-allele.xml.html#/html/body/div/div/div/p/a at Line 4770, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-genotype-definitions.html#9d0c39c6-6d1e-4adf-9875-075569f26405">StructureDefinition-hla-genotype-definitions.html#/html/body/div/div/div/p/a at Line 1230, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-genotype-examples.html#96b82505-0345-4d59-8a28-82147e24084a">StructureDefinition-hla-genotype-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 222, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-genotype-mappings.html#8e6f4a59-94cd-45c9-b35c-5167d19195d8">StructureDefinition-hla-genotype-mappings.html#/html/body/div/div/div/p/a at Line 417, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-genotype.html#3d31a84b-a5ca-4779-a373-70f0ce60d0f6">StructureDefinition-hla-genotype.html#/html/body/div/div/div/p/a at Line 939, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-genotype.json.html#158e0598-61b5-4575-9ad9-87df39e3a003">StructureDefinition-hla-genotype.json.html#/html/body/div/div/div/p/a at Line 5259, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-genotype.profile.json.html#84fa1d31-9c6b-4c81-9bd9-7a4bbac0459e">StructureDefinition-hla-genotype.profile.json.html#/html/body/div/div/div/p/a at Line 5308, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-genotype.profile.ttl.html#0dc72c89-6374-4047-9c52-f59df1f5a4c2">StructureDefinition-hla-genotype.profile.ttl.html#/html/body/div/div/div/p/a at Line 4638, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-genotype.profile.xml.html#dcf2d92f-caf1-4fab-b25a-37c5497f7d70">StructureDefinition-hla-genotype.profile.xml.html#/html/body/div/div/div/p/a at Line 4827, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-genotype.ttl.html#5835abb5-bd19-4d07-bbde-9b1dec348fd5">StructureDefinition-hla-genotype.ttl.html#/html/body/div/div/div/p/a at Line 4588, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-genotype.xml.html#84c5e7f8-4491-4b3f-bbea-86990b6815ab">StructureDefinition-hla-genotype.xml.html#/html/body/div/div/div/p/a at Line 4774, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-molecularsequence-definitions.html#ea54c366-a80f-4ca2-8eb3-21ed591b1783">StructureDefinition-hla-molecularsequence-definitions.html#/html/body/div/div/div/p/a at Line 1017, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-molecularsequence-examples.html#ebc9155c-3e83-46cd-b616-b4ae84ea4caf">StructureDefinition-hla-molecularsequence-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 211, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-molecularsequence-mappings.html#a05c40aa-6931-4a3d-a87b-d4144133241c">StructureDefinition-hla-molecularsequence-mappings.html#/html/body/div/div/div/p/a at Line 251, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-molecularsequence.html#e7a2143e-21bb-449a-92af-9d71493d7586">StructureDefinition-hla-molecularsequence.html#/html/body/div/div/div/div/div/table/tr/td/span/div/div/div/p/a at Line 891, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-molecularsequence.json.html#42404f3b-72be-4897-ab36-23d119b6c3d7">StructureDefinition-hla-molecularsequence.json.html#/html/body/div/div/div/p/a at Line 3940, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-molecularsequence.profile.json.html#cd3e2d28-8603-4537-a0d2-2d0d852e96d0">StructureDefinition-hla-molecularsequence.profile.json.html#/html/body/div/div/div/p/a at Line 3989, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-molecularsequence.profile.ttl.html#1b764d14-d4b7-4c06-9ecf-08b1ee7650da">StructureDefinition-hla-molecularsequence.profile.ttl.html#/html/body/div/div/div/p/a at Line 3557, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-molecularsequence.profile.xml.html#991ae71f-2e10-432c-a9ac-6a9dd1167005">StructureDefinition-hla-molecularsequence.profile.xml.html#/html/body/div/div/div/p/a at Line 3529, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-molecularsequence.ttl.html#f46c329f-2306-4a86-825b-e06513329d74">StructureDefinition-hla-molecularsequence.ttl.html#/html/body/div/div/div/p/a at Line 3507, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-molecularsequence.xml.html#3548b4b6-b16e-4397-b8e9-c21014fe602d">StructureDefinition-hla-molecularsequence.xml.html#/html/body/div/div/div/p/a at Line 3476, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-summary-report-definitions.html#5df8832e-fe00-4f74-8a50-175940625a26">StructureDefinition-hla-summary-report-definitions.html#/html/body/div/div/div/p/a at Line 1009, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-summary-report-examples.html#e19b2d5f-84d9-4bde-8e17-0530da6002c8">StructureDefinition-hla-summary-report-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 211, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-summary-report-mappings.html#2cd34735-037a-4bc1-b5a3-529186c48ef1">StructureDefinition-hla-summary-report-mappings.html#/html/body/div/div/div/p/a at Line 378, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-summary-report.html#8d025594-ed25-463b-9b45-855855f4e8fe">StructureDefinition-hla-summary-report.html#/html/body/div/div/div/p/a at Line 817, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-summary-report.json.html#16fe5b57-16bf-4bb5-8019-7eb30358c980">StructureDefinition-hla-summary-report.json.html#/html/body/div/div/div/p/a at Line 4166, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-summary-report.profile.json.html#1d62f827-9f14-42f2-8d7b-7a9df16bc286">StructureDefinition-hla-summary-report.profile.json.html#/html/body/div/div/div/p/a at Line 4215, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-summary-report.profile.ttl.html#944c74f8-7b73-4464-a93d-402488963f5f">StructureDefinition-hla-summary-report.profile.ttl.html#/html/body/div/div/div/p/a at Line 3866, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-summary-report.profile.xml.html#9717ba10-ce1e-4368-9099-d7e86a9efd4e">StructureDefinition-hla-summary-report.profile.xml.html#/html/body/div/div/div/p/a at Line 3719, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-summary-report.ttl.html#78518b0f-bc0b-4bfd-b628-183ea3dcaebd">StructureDefinition-hla-summary-report.ttl.html#/html/body/div/div/div/p/a at Line 3816, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hla-summary-report.xml.html#0c23a4db-dfc5-4656-b36d-25ac88d0ee61">StructureDefinition-hla-summary-report.xml.html#/html/body/div/div/div/p/a at Line 3666, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-hla-geneid-valueset.html#a086bd11-d55d-4e30-b38f-3135961245ef">ValueSet-hla-geneid-valueset.html#/html/body/div/div/div/p/a at Line 216, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-hla-geneid-valueset.json.html#87c59088-9eb6-482d-a5eb-7ae98bd7d35d">ValueSet-hla-geneid-valueset.json.html#/html/body/div/div/div/p/a at Line 370, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-hla-geneid-valueset.ttl.html#01a1f4f6-a757-478a-8e21-efe84338332e">ValueSet-hla-geneid-valueset.ttl.html#/html/body/div/div/div/p/a at Line 334, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-hla-geneid-valueset.xml.html#3e64925a-7fff-4091-8ebb-824fcf27297a">ValueSet-hla-geneid-valueset.xml.html#/html/body/div/div/div/p/a at Line 364, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#e9b36d5e-1692-4579-8100-3337dd972dd0">artifacts.html#/html/body/div/div/div/p/a at Line 269, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="background.html#14f7b9e2-91ca-4b26-bff2-c52a882843ca">background.html#/html/body/div/div/div/p/a at Line 159, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="downloads.html#92c6b049-7baf-4ab5-be7c-0524f4b2c358">downloads.html#/html/body/div/div/div/p/a at Line 159, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#4d2e7417-12c8-40e3-9bd8-eaa28e978d7b">index.html#/html/body/div/div/div/p/a at Line 393, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="spec.html#7970d3ee-5403-4a1b-af55-5e62b957fc58">spec.html#/html/body/div/div/div/p/a at Line 159, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#e6c196c9-1bc5-480f-844e-7ab0982e801c">toc.html#/html/body/div/div/div/p/a at Line 148, column 28</a></b></td><td><b>error</b></td><td><b>The link 'bmilius@nmdp.org' for &quot;NMDP/Be The Match&quot; cannot be resolved</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_bmilius_Documents_src_fsh_hla_build_input_ImplementationGuide-hla-reporting"> </a>
+<h2><a href="ImplementationGuide-hla-reporting.html">/Users/bmilius/Documents/src/fsh/hla/build/input/ImplementationGuide-hla-reporting.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_bmilius_Documents_src_fsh_hla_build_input_examples_observation-HLA-A-GenotypeExample1"> </a>
+<h2><a href="Observation-HLA-A-GenotypeExample1.html">/Users/bmilius/Documents/src/fsh/hla/build/input/examples/Observation-HLA-A-GenotypeExample1.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation/HLA-A-GenotypeExample1: Observation.value.ofType(CodeableConcept).coding[0]</b></td><td><b>information</b></td><td><b>Code System URI &quot;https://glstring.org&quot; is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/HLA-A-GenotypeExample1: Observation.value.ofType(CodeableConcept).coding[0]</b></td><td><b>error</b></td><td><b>Unsupported fixed pattern type for discriminator(system) for slice Observation.value[x]:valueCodeableConcept.coding:GL: org.hl7.fhir.r5.model.UriType</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation/HLA-A-GenotypeExample1: Observation.value.ofType(CodeableConcept)</b></td><td><b>information</b></td><td><b>Profile http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-genotype, Element 'Observation.value.ofType(CodeableConcept).coding[GL]'&quot;: Unable to check minimum required (1) due to lack of slicing validation</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/HLA-A-GenotypeExample1: Observation.component[0].value.ofType(CodeableConcept)</b></td><td><b>error</b></td><td><b>None of the codes provided are in the value set http://fhir.nmdp.org/ig/hla-reporting/ValueSet/hla-geneid-valueset (http://fhir.nmdp.org/ig/hla-reporting/ValueSet/hla-geneid-valueset, and a code from this value set is required) (codes = http://www.genenames.org/geneId#HGNC:4931)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/HLA-A-GenotypeExample1: Observation.component[0].value.ofType(CodeableConcept).coding[0]</b></td><td><b>error</b></td><td><b>The code system &quot;http://www.genenames.org/geneId&quot; is not known (encountered paired with code = &quot;HGNC:4931&quot;); The code provided (http://www.genenames.org/geneId#HGNC:4931) is not  valid in the value set All codes known to the system for &quot;http://www.genenames.org/geneId#HGNC:4931&quot;</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_bmilius_Documents_src_fsh_hla_build_input_profiles_structuredefinition-hla-allele"> </a>
+<h2><a href="StructureDefinition-hla-allele.html">/Users/bmilius/Documents/src/fsh/hla/build/input/profiles/StructureDefinition-hla-allele.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-allele</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_bmilius_Documents_src_fsh_hla_build_input_profiles_structuredefinition-hla-genotype"> </a>
+<h2><a href="StructureDefinition-hla-genotype.html">/Users/bmilius/Documents/src/fsh/hla/build/input/profiles/StructureDefinition-hla-genotype.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_bmilius_Documents_src_fsh_hla_build_input_profiles_structuredefinition-hla-molecularsequence"> </a>
+<h2><a href="StructureDefinition-hla-molecularsequence.html">/Users/bmilius/Documents/src/fsh/hla/build/input/profiles/StructureDefinition-hla-molecularsequence.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-molecularsequence</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_bmilius_Documents_src_fsh_hla_build_input_profiles_structuredefinition-hla-summary-report"> </a>
+<h2><a href="StructureDefinition-hla-summary-report.html">/Users/bmilius/Documents/src/fsh/hla/build/input/profiles/StructureDefinition-hla-summary-report.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-summary-report</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_bmilius_Documents_src_fsh_hla_build_input_vocabulary_codesystem-glstring-codesystem"> </a>
+<h2><a href="CodeSystem-glstring-codesystem.html">/Users/bmilius/Documents/src/fsh/hla/build/input/vocabulary/CodeSystem-glstring-codesystem.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_bmilius_Documents_src_fsh_hla_build_input_vocabulary_codesystem-hla-genename-codesystem"> </a>
+<h2><a href="CodeSystem-hla-genename-codesystem.html">/Users/bmilius/Documents/src/fsh/hla/build/input/vocabulary/CodeSystem-hla-genename-codesystem.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_bmilius_Documents_src_fsh_hla_build_input_vocabulary_valueset-hla-geneid-valueset"> </a>
+<h2><a href="ValueSet-hla-geneid-valueset.html">/Users/bmilius/Documents/src/fsh/hla/build/input/vocabulary/ValueSet-hla-geneid-valueset.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>hla-geneid-valueset</b></td><td><b>error</b></td><td><b>Error from server: Unable to provide support for code system http://www.genenames.org/geneId</b></td>
+   </tr>
+</table>
+</body>
+</html>

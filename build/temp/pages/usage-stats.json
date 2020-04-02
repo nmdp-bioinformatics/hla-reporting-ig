@@ -1,0 +1,83 @@
+{
+  "package": "hla-reporting",
+  "version": "0.1.0",
+  "fhirVersion": "4.0.1",
+  "extensions": [],
+  "profiles": {
+    "Observation": [
+      {
+        "url": "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-allele",
+        "title": "HLA Allele Observation"
+      },
+      {
+        "url": "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-genotype",
+        "title": "HLA Genotype Observation"
+      }
+    ],
+    "MolecularSequence": [
+      {
+        "url": "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-molecularsequence",
+        "title": "HLA Molecular Sequence"
+      }
+    ],
+    "DiagnosticReport": [
+      {
+        "url": "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-summary-report",
+        "title": "HLA Summary Report"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/bodySite": [
+      "Observation"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/diagnosticReport-risk": [
+      "DiagnosticReport"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding": [
+      "Observation"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/RecommendedAction": [
+      "DiagnosticReport"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/RelatedArtifact": [
+      "DiagnosticReport"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/SupportingInfo": [
+      "DiagnosticReport"
+    ]
+  }
+}

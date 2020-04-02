@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="glstring-codesystem"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Genotype List String Code CodeSystem</h2><div><p>Genotype List String Codesystem used for HLA reporting</p>
+</div><p><b>Copyright Statement:</b> National Marrow Donor Program</p><p>This code system http://www.glstring.org defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Definition</b></td></tr></table></div>
+  </text>
+  <url value="http://www.glstring.org"/>
+  <version value="0.1.0"/>
+  <name value="GLStringCS"/>
+  <title value="Genotype List String Code CodeSystem"/>
+  <status value="active"/>
+  <date value="2020-04-02T14:45:05-05:00"/>
+  <publisher value="NMDP/Be The Match"/>
+  <contact>
+    <name value="Bob Milius"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bmilius@nmdp.org"/>
+    </telecom>
+  </contact>
+  <description value="Genotype List String Codesystem used for HLA reporting"/>
+  <copyright value="National Marrow Donor Program"/>
+  <compositional value="true"/>
+  <content value="complete"/>
+</CodeSystem>
