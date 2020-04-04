@@ -20,7 +20,7 @@
   "maintainers": [
     {
       "name": "Bob Milius",
-      "email": "bmilius@nmdp.org"
+      "email": "mailto:bmilius@nmdp.org"
     }
   ],
   "license": "CC0-1.0"

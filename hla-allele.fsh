@@ -21,5 +21,5 @@ Description:    "HLA Allele profile of haplotype observation"
 * valueCodeableConcept.coding contains GL 1..1 MS
 * valueCodeableConcept.coding[GL].system 1..1
 * valueCodeableConcept.coding[GL].code 1..1
-* valueCodeableConcept.coding[GL].system = "https://glstring.org"
+* valueCodeableConcept.coding[GL].system = "http://glstring.org"
 * valueCodeableConcept.coding[GL].code obeys GLSC
