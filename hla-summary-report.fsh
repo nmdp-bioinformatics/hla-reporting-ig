@@ -56,6 +56,6 @@ Description: "Example of HLA summary report"
 * status = #final
 * code.coding[code] = LNC#81247-9 "Master HL7 genetic variant reporting panel"
 * code.coding[HLAGeneGroup] = HLAGenegroupCS#588 "Histocompatibility complex (HLA)"
-* result.reference = "http://example.org/fhir/Observation/myHLAgenotype"
+* result.reference = "http://example.org/fhir/Observation/HLA-A-GenotypeExample1"
 // * result.reference = HLA-A-GenotypeExample1
 // * result.reference = "hla-genotype-ex1"

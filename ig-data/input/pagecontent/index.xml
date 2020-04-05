@@ -334,9 +334,15 @@
 &lt;/component></pre>
 
   <a name="hla-examples"> </a>
-  <h4>HLA - Examples</h4>
+  <h3>HLA - Examples</h3>
   <ul>
-    <li>[examples]</li>
+    <li><a href="Observation-HLA-A-GenotypeExample1.html">HLA-A Genotype Observation</a>></li>
+    <li><a href="Observation-HLA-A-AlleleExample1.html">HLA-A Allele Observation 1</a>></li>
+    <li><a href="Observation-HLA-A-AlleleExample2.html">HLA-A Allele Observation 2</a>></li>
+    <li><a href="MolecularSequence-HLA-A-SequenceExample1.html">HLA-A MolecularSequence 1</a>></li>
+    <li><a href="MolecularSequence-HLA-A-SequenceExample2.html">HLA-A MolecularSequence 2</a>></li>
+    <li><a href="DiagnosticReport-HLA-A-SummaryReportExample1.html">HLA-A Summary Report</a>></li>
+    <li>HLA-A Transaction Bundle</li>
   </ul>
 </div>
 

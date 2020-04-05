@@ -2,6 +2,7 @@
   <li><a href="index.html">IG Home</a></li>
   <li><a href="toc.html">Table of Contents</a></li>
   <li class="dropdown">
+  <!--
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">MyIg Background<b class="caret">
       </b>
     </a>
@@ -11,6 +12,8 @@
       </li>
     </ul>
   </li>
+  -->
+  <!--
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Specification<b class="caret">
       </b>
@@ -21,6 +24,7 @@
       </li>
     </ul>
   </li>
+  -->
   <li><a href="artifacts.html">Artifact Index</a></li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
@@ -30,9 +34,11 @@
       <li>
         <a target="_blank" href="{{site.data.fhir.path}}index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
       </li>
+      <!--
       <li>
         <a href="downloads.html">Downloads</a>
       </li>
+      -->
     </ul>
   </li>
 </ul>      
