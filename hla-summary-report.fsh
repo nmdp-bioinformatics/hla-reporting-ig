@@ -18,8 +18,9 @@ Description:    "HLA Summary Report profile of genomics report"
 * code.coding contains HLAGeneGroup 0..1
 * code.coding[HLAGeneGroup].system 1..1
 * code.coding[HLAGeneGroup].code 1..1
-//* code.coding[HLAGeneGroup].system = "http://www.genenames.org/genegroup"
-* code.coding[HLAGeneGroup] = HLAGenegroupCS#588 "Histocompatibility complex (HLA)"
+* code.coding[HLAGeneGroup].system = "http://www.genenames.org/genegroup"
+* code.coding[HLAGeneGroup].code = #588 "Histocompatibility complex (HLA)"
+// * code.coding[HLAGeneGroup] = HLAGenegroupCS#588 "Histocompatibility complex (HLA)"
 
 * result contains hla-genotype 0..* 
 * result contains hla-allele 0..* 
@@ -50,9 +51,11 @@ InstanceOf: http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-summar
 Usage: #example
 Title:      "HLA-A Summary Report Example 1"
 Description: "Example of HLA summary report"
-* extension[GenotypeSummary].valueCodeableConcept = GLSCodeSystem#hla#3.31.0#HLA-B*07:02:01:01/HLA-B*07:02:01:03+HLA-B*13:02:01:01
+// * id = "hla-a-summaryreport-ex1"
+* extension[GenotypeSummary].valueCodeableConcept = GLSCodeSystem#hla#3.31.0#HLA-A*01:01:01:01+HLA-A*01:01:01:03
 * status = #final
 * code.coding[code] = LNC#81247-9 "Master HL7 genetic variant reporting panel"
 * code.coding[HLAGeneGroup] = HLAGenegroupCS#588 "Histocompatibility complex (HLA)"
 * result.reference = "http://example.org/fhir/Observation/myHLAgenotype"
 // * result.reference = HLA-A-GenotypeExample1
+// * result.reference = "hla-genotype-ex1"

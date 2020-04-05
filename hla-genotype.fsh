@@ -35,8 +35,11 @@ InstanceOf: http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-genoty
 Usage: #example
 Title:      "HLA-A Genotype Example 1"
 Description: "Example of HLA-A genotyping using IMGT/HLA 3.25 nomenclature"
+// * id = "hla-genotype-ex1"
 * status = #final
-* valueCodeableConcept.coding[GL] = GLSCodeSystem#hla#3.25.0#HLA-A*01:01:01:01/HLA-A*24:02:01:01
+* valueCodeableConcept.coding[GL] = GLSCodeSystem#hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:01:01:03
 * component[gene-studied].valueCodeableConcept = HLAGeneIDCS#HGNC:4931 "HLA-A"
-* derivedFrom.reference = "http://example.org/fhir/Observation/myHLAallele"
+* derivedFrom.reference = "http://example.org/fhir/Observation/HLA-A-AlleleExample1"
+* derivedFrom.reference = "http://example.org/fhir/Observation/HLA-A-AlleleExample2"
 // * derivedFrom.reference = HLA-A-AlleleExample1
+// * derivedFrom.reference = HLA-A-AlleleExample2
