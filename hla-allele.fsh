@@ -6,6 +6,10 @@ Description:    "HLA Allele profile of haplotype observation"
 
 * component[cytogenetic-location] 0..0
 * component[ref-sequence-assembly] 0..0
+* referenceRange 0..0
+* derivedFrom[variant] 0..0
+* derivedFrom[haplotype] 0..0
+
 
 * component[gene-studied] 1..1 MS
 // * component[gene-studied].value[x] 1..1
@@ -23,3 +27,18 @@ Description:    "HLA Allele profile of haplotype observation"
 * valueCodeableConcept.coding[GL].code 1..1
 * valueCodeableConcept.coding[GL].system = "http://glstring.org"
 * valueCodeableConcept.coding[GL].code obeys GLSC
+
+* derivedFrom contains hla-sequence 0..*
+* derivedFrom[hla-sequence] only Reference(hla-molecularsequence)
+
+
+Instance:   HLA-A-AlleleExample1
+InstanceOf: http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-allele
+Usage: #example
+Title:      "HLA-A Allele Example 1"
+Description: "Example of HLA-A allele using IMGT/HLA 3.25 nomenclature"
+* status = #final
+* valueCodeableConcept.coding[GL] = GLSCodeSystem#hla#3.25.0#HLA-A*01:01:01:01
+* component[gene-studied].valueCodeableConcept = HLAGeneIDCS#HGNC:4931 "HLA-A"
+* derivedFrom.reference = "http://example.org/fhir/MolecularSequence/myHLAsequence"
+// * derivedFrom.reference = HLA-A-SequenceExample1

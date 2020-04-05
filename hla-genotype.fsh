@@ -24,12 +24,19 @@ Description:    "HLA Genotype profile of genotype observation"
 * valueCodeableConcept.coding[GL].system = "http://glstring.org"
 * valueCodeableConcept.coding[GL].code obeys GLSC
 
+* derivedFrom contains hla-allele 0..*
+* derivedFrom contains hla-sequence 0..*
+* derivedFrom[hla-allele] only Reference(hla-allele)
+* derivedFrom[hla-sequence] only Reference(hla-molecularsequence)
 
 
 Instance:   HLA-A-GenotypeExample1
 InstanceOf: http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-genotype
+Usage: #example
 Title:      "HLA-A Genotype Example 1"
 Description: "Example of HLA-A genotyping using IMGT/HLA 3.25 nomenclature"
 * status = #final
 * valueCodeableConcept.coding[GL] = GLSCodeSystem#hla#3.25.0#HLA-A*01:01:01:01/HLA-A*24:02:01:01
 * component[gene-studied].valueCodeableConcept = HLAGeneIDCS#HGNC:4931 "HLA-A"
+* derivedFrom.reference = "http://example.org/fhir/Observation/myHLAallele"
+// * derivedFrom.reference = HLA-A-AlleleExample1
