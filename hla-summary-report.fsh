@@ -46,16 +46,18 @@ Description:    "HLA Summary Report profile of genomics report"
 * media 0..0
 
 
-Instance:   HLA-A-SummaryReportExample1
+Instance:   HLA-AB-SummaryReportExample
 InstanceOf: http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-summary-report
 Usage: #example
-Title:      "HLA-A Summary Report Example 1"
+Title:      "HLA-A, HLA-B Summary Report Example"
 Description: "Example of HLA summary report"
 // * id = "hla-a-summaryreport-ex1"
-* extension[GenotypeSummary].valueCodeableConcept = GLSCodeSystem#hla#3.31.0#HLA-A*01:01:01:01+HLA-A*01:01:01:03
+* extension[GenotypeSummary].valueCodeableConcept = GLSCodeSystem#hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:01:02^#HLA-B*57:01:01:01+HLA-B*15:01:01:01
 * status = #final
 * code.coding[code] = LNC#81247-9 "Master HL7 genetic variant reporting panel"
 * code.coding[HLAGeneGroup] = HLAGenegroupCS#588 "Histocompatibility complex (HLA)"
-* result.reference = "http://example.org/fhir/Observation/HLA-A-GenotypeExample1"
-// * result.reference = HLA-A-GenotypeExample1
-// * result.reference = "hla-genotype-ex1"
+* result[0].reference = "http://example.org/fhir/Observation/HLA-A-GenotypeExample"
+* result[0].reference = "http://example.org/fhir/Observation/HLA-B-GenotypeExample"
+// * result[0].reference = HLA-A-GenotypeExample
+// * result[1].reference = HLA-B-GenotypeExample
+

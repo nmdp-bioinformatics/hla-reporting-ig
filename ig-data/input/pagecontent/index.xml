@@ -336,13 +336,24 @@
   <a name="hla-examples"> </a>
   <h3>HLA - Examples</h3>
   <ul>
-    <li><a href="Observation-HLA-A-GenotypeExample1.html">HLA-A Genotype Observation</a>></li>
-    <li><a href="Observation-HLA-A-AlleleExample1.html">HLA-A Allele Observation 1</a>></li>
-    <li><a href="Observation-HLA-A-AlleleExample2.html">HLA-A Allele Observation 2</a>></li>
-    <li><a href="MolecularSequence-HLA-A-SequenceExample1.html">HLA-A MolecularSequence 1</a>></li>
-    <li><a href="MolecularSequence-HLA-A-SequenceExample2.html">HLA-A MolecularSequence 2</a>></li>
-    <li><a href="DiagnosticReport-HLA-A-SummaryReportExample1.html">HLA-A Summary Report</a>></li>
-    <li>HLA-A Transaction Bundle</li>
+    <li><a href="DiagnosticReport-HLA-AB-SummaryReportExample.html">HLA-A,B Summary Report</a></li>
+    <ul>
+      <li><a href="Observation-HLA-A-GenotypeExample.html">Genotype Observation for HLA-A</a></li>
+      <ul>
+        <li><a href="Observation-HLA-A-AlleleExample1.html">HLA-A Allele Observation for HLA-A*01:01:01:01</a></li>
+        <li><a href="Observation-HLA-A-AlleleExample2.html">HLA-A Allele Observation for HLA-A*01:02</a></li>
+        <li><a href="MolecularSequence-HLA-A-SequenceExample1.html">HLA-A MolecularSequence for HLA-A*01:01:01:01</a></li>
+        <li><a href="MolecularSequence-HLA-A-SequenceExample2.html">HLA-A MolecularSequence for HLA-A*01:02</a></li>
+      </ul>
+      <li><a href="Observation-HLA-B-GenotypeExample.html">Genotype Observation for HLA-B</a></li>
+      <ul>
+        <li><a href="Observation-HLA-B-AlleleExample1.html">Allele Observation for HLA-B*57:01:01:0</a></li>
+        <li><a href="Observation-HLA-B-AlleleExample2.html">Allele Observation for HLA-B*15:01:01:01</a></li>
+        <li><a href="MolecularSequence-HLA-B-SequenceExample1.html">MolecularSequence for HLA-B*57:01:01:0</a></li>
+        <li><a href="MolecularSequence-HLA-B-SequenceExample2.html">MolecularSequence for HLA-B*15:01:01:01</a></li>
+      </ul>  
+    </ul>
+    <li>HLA-A,B Transaction Bundle containing all of above</li>
   </ul>
 </div>
 

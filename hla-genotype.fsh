@@ -30,16 +30,28 @@ Description:    "HLA Genotype profile of genotype observation"
 * derivedFrom[hla-sequence] only Reference(hla-molecularsequence)
 
 
-Instance:   HLA-A-GenotypeExample1
+Instance:   HLA-A-GenotypeExample
 InstanceOf: http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-genotype
 Usage: #example
-Title:      "HLA-A Genotype Example 1"
+Title:      "HLA-A Genotype Example (HLA-A*01:01:01:01+HLA-A*01:02)"
 Description: "Example of HLA-A genotyping using IMGT/HLA 3.25 nomenclature"
-// * id = "hla-genotype-ex1"
 * status = #final
-* valueCodeableConcept.coding[GL] = GLSCodeSystem#hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:01:01:03
+* valueCodeableConcept.coding[GL] = GLSCodeSystem#hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:02
 * component[gene-studied].valueCodeableConcept = HLAGeneIDCS#HGNC:4931 "HLA-A"
-* derivedFrom.reference = "http://example.org/fhir/Observation/HLA-A-AlleleExample1"
-* derivedFrom.reference = "http://example.org/fhir/Observation/HLA-A-AlleleExample2"
+* derivedFrom[0].reference = "http://example.org/fhir/Observation/HLA-A-AlleleExample1"
+* derivedFrom[1].reference = "http://example.org/fhir/Observation/HLA-A-AlleleExample2"
 // * derivedFrom.reference = HLA-A-AlleleExample1
 // * derivedFrom.reference = HLA-A-AlleleExample2
+
+Instance:   HLA-B-GenotypeExample
+InstanceOf: http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-genotype
+Usage: #example
+Title:      "HLA-B Genotype Example (HLA-B*57:01:01:01+HLA-B*15:01:01:01)"
+Description: "Example of HLA-B genotyping using IMGT/HLA 3.25 nomenclature"
+* status = #final
+* valueCodeableConcept.coding[GL] = GLSCodeSystem#hla#3.25.0#HLA-B*57:01:01:01+HLA-B*15:01:01:01
+* component[gene-studied].valueCodeableConcept = HLAGeneIDCS#HGNC:4932 "HLA-B"
+* derivedFrom[0].reference = "http://example.org/fhir/Observation/HLA-B-AlleleExample1"
+* derivedFrom[1].reference = "http://example.org/fhir/Observation/HLA-B-AlleleExample2"
+// * derivedFrom.reference = HLA-B-AlleleExample1
+// * derivedFrom.reference = HLA-A-BlleleExample2

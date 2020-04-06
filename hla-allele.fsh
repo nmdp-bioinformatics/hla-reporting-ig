@@ -33,10 +33,9 @@ Description:    "HLA Allele profile of haplotype observation"
 
 Instance:   HLA-A-AlleleExample1
 InstanceOf: http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-allele
-Usage: #example
-Title:      "HLA-A Allele Example 1"
-Description: "Example of HLA-A allele using IMGT/HLA 3.25 nomenclature"
-// * id = "hla-allele-ex1"
+Usage:      #example
+Title:      "HLA-A*01:01:01:01 Allele Example"
+Description: "Example of HLA-A allele HLA-A*01:01:01:01 using IMGT/HLA 3.25 nomenclature"
 * status = #final
 * valueCodeableConcept.coding[GL] = GLSCodeSystem#hla#3.25.0#HLA-A*01:01:01:01
 * component[gene-studied].valueCodeableConcept = HLAGeneIDCS#HGNC:4931 "HLA-A"
@@ -46,12 +45,34 @@ Description: "Example of HLA-A allele using IMGT/HLA 3.25 nomenclature"
 
 Instance:   HLA-A-AlleleExample2
 InstanceOf: http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-allele
-Usage: #example
-Title:      "HLA-A Allele Example 2"
-Description: "Example of HLA-A allele using IMGT/HLA 3.25 nomenclature"
-// * id = "hla-allele-ex1"
+Usage:      #example
+Title:      "HLA-A*01:02 Allele Example"
+Description: "Example of HLA-A allele HLA-A*01:02 using IMGT/HLA 3.25 nomenclature"
 * status = #final
-* valueCodeableConcept.coding[GL] = GLSCodeSystem#hla#3.25.0#HLA-A*01:01:01:03
+* valueCodeableConcept.coding[GL] = GLSCodeSystem#hla#3.25.0#HLA-A*01:02
 * component[gene-studied].valueCodeableConcept = HLAGeneIDCS#HGNC:4931 "HLA-A"
 * derivedFrom.reference = "http://example.org/fhir/MolecularSequence/HLA-A-SequenceExample2"
 // * derivedFrom.reference = HLA-A-SequenceExample2
+
+
+Instance:   HLA-B-AlleleExample1
+InstanceOf: http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-allele
+Usage:      #example
+Title:      "HLA-B*57:01:01:01 Allele Example"
+Description: "Example of HLA-B*57:01:01:01 allele using IMGT/HLA 3.25 nomenclature"
+* status = #final
+* valueCodeableConcept.coding[GL] = GLSCodeSystem#hla#3.25.0#HLA-B*57:01:01:01
+* component[gene-studied].valueCodeableConcept = HLAGeneIDCS#HGNC:4932 "HLA-B"
+* derivedFrom.reference = "http://example.org/fhir/MolecularSequence/HLA-B-SequenceExample1"
+// * derivedFrom.reference = HLA-B-SequenceExample1
+
+Instance:   HLA-B-AlleleExample2
+InstanceOf: http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-allele
+Usage:      #example
+Title:      "HLA-B*15:01:01:01 Allele Example"
+Description: "Example of HLA-B*15:01:01:01 allele using IMGT/HLA 3.25 nomenclature"
+* status = #final
+* valueCodeableConcept.coding[GL] = GLSCodeSystem#hla#3.25.0#HLA-B*15:01:01:01
+* component[gene-studied].valueCodeableConcept = HLAGeneIDCS#HGNC:4932 "HLA-B"
+* derivedFrom.reference = "http://example.org/fhir/MolecularSequence/HLA-B-SequenceExample2"
+// * derivedFrom.reference = HLA-B-SequenceExample1
