@@ -24,6 +24,10 @@ Description:    "HLA Genotype profile of genotype observation"
 * valueCodeableConcept.coding[GL].system = "http://glstring.org"
 * valueCodeableConcept.coding[GL].code obeys GLSC
 
+* derivedFrom ^slicing.discriminator.type = #pattern
+* derivedFrom ^slicing.discriminator.path = "resolve().code"
+* derivedFrom ^slicing.rules = #open
+* derivedFrom ^slicing.description = "reference to allele and sequence"
 * derivedFrom contains hla-allele 0..*
 * derivedFrom contains hla-sequence 0..*
 * derivedFrom[hla-allele] only Reference(hla-allele)

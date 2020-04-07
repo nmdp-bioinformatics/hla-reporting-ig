@@ -12,73 +12,21 @@
       >MolecularSequence</a> resource to allow reporting sequencing results together with novel
     variants. </p>
   <a name="background"> </a>
-  <h3>Background</h3>
-  <p> </p>
+  <h3>Profiles in this IG</h3>
+  <p><ul>
+    <li><a href="StructureDefinition-hla-summary-report.html">HLA Summary Report</a></li>
+    <li><a href="StructureDefinition-hla-genotype.html">HLA Genotype</a></li>
+    <li><a href="StructureDefinition-hla-allele.html">HLA Allele</a></li>
+    <li><a href="StructureDefinition-hla-molecularsequence.html">HLA Molecular Sequence</a></li>
+  </ul> </p>
 
-  <a name="miring"> </a>
-  <h4>MIRING</h4>
-
-  <p> The structure of the HLA typing report in this profile attempts to follow the principles
-    outlined in the Minimum Information for ReportIng Next-generation sequence Genotyping (MIRING).
-    These principles were identified through a series of meetings with an international group of
-    stakeholders in the application of Next Generation Sequencing (NGS) technology for genotyping
-    the HLA and KIR genes as well as other immune-related genes (<a
-      href="http://igdawg.org/ngs.html">http://igdawg.org/ngs.html</a>). MIRING describes eight
-    principles, described in detail in <a href="https://www.ncbi.nlm.nih.gov/pubmed/26319908">Human
-      Immunology. 2015 Dec; 76(12):954-962</a>. These include detailed metadata about: </p>
-  <ol>
-    <li>MIRING Annotation</li>
-    <li>Reference Context</li>
-    <li>Full Genotype</li>
-    <li>Consensus Sequence</li>
-    <li>Novel Polymorphisms</li>
-    <li>Platform Documentation</li>
-    <li>Read Processing Documentation</li>
-    <li>Primary Data</li>
-  </ol>
-  <p> These principles were implemented in a technical specification by extending an existing XML
-    based format for exchanging histocompatibility and immunogenetic genotyping data called <a
-      href="https://bioinformatics.bethematchclinical.org/hla-resources/hml">Histoimmunogenetics
-      Markup Language (HML)</a> to include results from NGS methodologies. The resulting schema may
-    be found in <a href="https://schemas.nmdp.org">here</a>. The National Marrow Donor Program
-    (NMDP)/Be The Match uses this format for reporting HLA genotyping from potential donors and for
-    patients needing stem cell transplants. </p>
-  <p> Both MIRING and HML were used to inform mapping data elements to FHIR resources profiled in
-    this IG. Examples are found at the end of this page. </p>
-  <ul>
-    <li>Minimum information for reporting next generation sequence genotyping (MIRING): Guidelines
-      for reporting HLA and KIR genotyping via next generation sequencing (see <a
-        href="https://www.ncbi.nlm.nih.gov/pubmed/26407912">here</a> )</li>
-    <li>Histoimmunogenetics Markup Language 1.0: Reporting Next Generation Sequencing-based HLA and
-      KIR Genotyping (see <a href="https://www.ncbi.nlm.nih.gov/pubmed/26319908">here</a> )</li>
-  </ul>
-  <a name="hla-allele-nomenclature-assignment"> </a>
-  <h4>HLA - Nomenclature and Allele Assignment</h4>
-  <p> Once HLA is typed, perhaps using targeted probes, exon sequencing, or full gene sequencing,
-    the results are analyzed and assigned to one or more of the <a
-      href="https://www.ebi.ac.uk/ipd/imgt/hla">IMGT/HLA</a> gene alleles using the <a
-      href="http://hla.alleles.org/nomenclature/naming.html">HLA nomenclature</a>. While the actual
-    results may be a haplotype of exons or a set of partial gene sequences, the results are assigned
-    to an allele from a known list. This allows results from different HLA genotyping methodologies
-    to be compared, for example for donor/recipient transplant matching. However, reducing the
-    results to HLA nomenclature may introduce ambiguity in the actual results. For example, an
-    allele may be reported at only a two-field protein level (e.g., HLA-B*57:01) which represents
-    any of over forty DNA variants, while the actual data may represent a single full gene (e.g.,
-    HLA-B*57:01:01:05). The nomenclature may also over represent the quality of the data. For
-    example, when a full gene allele name is assigned to the results, it is unknown how the data was
-    captured (probes, exon-only sequence, or full gene sequencing). Methodology is captured
-    separately in the report. Also, this system cannot easily capture novel alleles as it represents
-    a closed-world of possible alleles. Earlier scientific articles and data may reference HLA
-    serotypes (e.g. HLA-B57), recognizable by the absence of an asterisk in the name, which does not
-    capture any molcular information. The IMGT/HLA allele database is updated every three months to
-    account for the discovery of new alleles, and the deletion or renaming of old alleles. This is
-    why it is important to include the IMGT/HLA version when the HLA allele is assigned. </p>
   <a name="building-report"> </a>
   <h3>Building a report</h3>
-  <p>A complete HLA genotyping report is typically contained in a FHIR transaction <a
-      href="https://www.hl7.org/fhir/R4/bundle.html">Bundle</a> containing individual resources
-    conforming to the profiles described in this IG. Examples of full transaction bundles included.
+  <p>A complete HLA genotyping report is typically contained in a FHIR transaction 
+    <a href="https://www.hl7.org/fhir/R4/bundle.html">Bundle</a> containing individual resources
+    conforming to the profiles described in this IG. Examples of full transaction bundles included below.
     Minimally, it would contain an HLA Summary Report and one or more HLA Genotype observations.
+  </p>
       <h4>Summary Report and Genotype Observation</h4>
     <p> In a simple case, the <a href="StructureDefinition-hla-summary-report.html">HLA Summary
         Report</a> refers to an <a href="StructureDefinition-hla-genotype.html">HLA Genotype</a>
@@ -136,7 +84,8 @@
       width="70%" height="70%" style="border:1px solid black"/>
     <p>Figure 4</p>
     <a name="building-bundle"> </a>
-    <h4>Building a bundle</h4> Once individual resources are created, including references to each
+    <h4>Building a bundle</h4> 
+    <p>Once individual resources are created, including references to each
     other, a FHIR transaction bundle may be created. A skeleton of such a FHIR bundle containing a
     Summary Report and a Genotype observation is shown below</p>
 
@@ -154,7 +103,7 @@
               value="http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-summary-report"
             />
           &lt;/meta>
-          ...etc...
+          ...snip...
           &lt;result>
             &lt;reference value="urn:uuid:[unique uuid for HLA Genotype found in this bundle]"/>
           &lt;/result>
@@ -176,7 +125,7 @@
               value="http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-genotype"
             />
           &lt;/meta>
-          ...etc...
+          ...snip...
           &lt;derivedFrom>
               &lt;reference value="urn:uuid:[unique uuid for HLA Allele found in this bundle]"/>
           &lt;/derivedFrom>
@@ -188,48 +137,7 @@
         &lt;url value="Observation"/>
       &lt;/request>
     &lt;/entry>
-    
-    &lt;!-- HLA Allele Observation -->
-    &lt;entry>
-      &lt;fullUrl value="urn:uuid:[unique uuid for HLA Allele]"/>
-      &lt;resource>
-        &lt;Observation>
-          &lt;meta>
-            &lt;profile
-              value="http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-allele"
-            />
-          &lt;/meta>
-          ...etc...
-          &lt;derivedFrom>
-              &lt;reference value="urn:uuid:[unique uuid for HLA MolecularSequence found in this bundle]"/>
-        &lt;/derivedFrom>
-          ...etc...
-        &lt;/Observation>
-      &lt;/resource>
-      &lt;request>
-        &lt;method value="POST"/>
-        &lt;url value="Observation"/>
-      &lt;/request>
-    &lt;/entry>
-    
-    &lt;!-- HLA MolecularSequence -->
-    &lt;entry>
-      &lt;fullUrl value="urn:uuid:[unique uuid for this HLA MolecularSequence]"/>
-      &lt;resource>
-        &lt;MolecularSequence>
-          &lt;meta>
-            &lt;profile
-              value="http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-allele"
-            />
-          &lt;/meta>
-          ...etc...
-        &lt;/MolecularSequence>
-      &lt;/resource>
-      &lt;request>
-        &lt;method value="POST"/>
-        &lt;url value="Observation"/>
-      &lt;/request>
-    &lt;/entry>
+    ...other entries...
   &lt;/Bundle></pre>
   
   <a name="hla-ambiguity"> </a>

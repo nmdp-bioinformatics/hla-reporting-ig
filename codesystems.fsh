@@ -8,6 +8,7 @@ Description: "Genotype List String Codesystem used for HLA reporting"
 * ^status = #active
 * ^copyright = "National Marrow Donor Program"
 * ^publisher = "NMDP/CIBMTR"
+* ^content = #not-present
 
 CodeSystem: HLAGeneIdCS
 Title: "HLA HGNC GeneID CodeSystem"
