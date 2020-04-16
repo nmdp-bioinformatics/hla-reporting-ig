@@ -21,7 +21,7 @@ Description:    "HLA Genotype profile of genotype observation"
 * valueCodeableConcept.coding contains GL 1..1 MS
 * valueCodeableConcept.coding[GL].system 1..1
 * valueCodeableConcept.coding[GL].code 1..1
-* valueCodeableConcept.coding[GL].system = "http://glstring.org"
+* valueCodeableConcept.coding[GL].system = "http://glstring.org" (exactly)
 * valueCodeableConcept.coding[GL].code obeys GLSC
 
 * derivedFrom ^slicing.discriminator.type = #pattern
