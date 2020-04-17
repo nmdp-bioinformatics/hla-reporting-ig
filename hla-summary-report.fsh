@@ -34,7 +34,7 @@ Description:    "HLA Summary Report profile of genomics report"
 * result ^slicing.discriminator.type = #pattern
 * result ^slicing.discriminator.path = "$this.resolve().code"
 * result ^slicing.rules = #open
-* result ^slicing.description = "slice result based on pattern of code"
+* result ^slicing.description = "slice result based on pattern of observation.code"
 * result contains 
     hla-genotype 0..* MS and
     hla-allele 0..* MS
