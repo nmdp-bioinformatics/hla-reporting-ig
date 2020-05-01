@@ -1,0 +1,169 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "hla-summary-report",
+  "url": "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-summary-report",
+  "version": "0.1.0",
+  "name": "HLASummaryReport",
+  "title": "HLA Summary Report",
+  "status": "active",
+  "description": "HLA Summary Report profile of genomics report",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "DiagnosticReport",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DiagnosticReport.extension",
+        "path": "DiagnosticReport.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "DiagnosticReport.extension:GenotypeSummary",
+        "path": "DiagnosticReport.extension",
+        "sliceName": "GenotypeSummary",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-genotype-summary"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.code.coding",
+        "path": "DiagnosticReport.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "system"
+            }
+          ],
+          "rules": "open",
+          "description": "slicing code"
+        },
+        "min": 2
+      },
+      {
+        "id": "DiagnosticReport.code.coding:code",
+        "path": "DiagnosticReport.code.coding",
+        "sliceName": "code",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "DiagnosticReport.code.coding:code.system",
+        "path": "DiagnosticReport.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "DiagnosticReport.code.coding:code.code",
+        "path": "DiagnosticReport.code.coding.code",
+        "min": 1,
+        "fixedCode": "81247-9"
+      },
+      {
+        "id": "DiagnosticReport.code.coding:HLAGeneGroup",
+        "path": "DiagnosticReport.code.coding",
+        "sliceName": "HLAGeneGroup",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "DiagnosticReport.code.coding:HLAGeneGroup.system",
+        "path": "DiagnosticReport.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://www.genenames.org/genegroup"
+      },
+      {
+        "id": "DiagnosticReport.code.coding:HLAGeneGroup.code",
+        "path": "DiagnosticReport.code.coding.code",
+        "min": 1,
+        "fixedCode": "588"
+      },
+      {
+        "id": "DiagnosticReport.result",
+        "path": "DiagnosticReport.result",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this.resolve().code"
+            }
+          ],
+          "rules": "open",
+          "description": "slice on pattern of Obs.code"
+        }
+      },
+      {
+        "id": "DiagnosticReport.result:hla-genotype",
+        "path": "DiagnosticReport.result",
+        "sliceName": "hla-genotype",
+        "short": "HLA Genotype",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-genotype"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.result:hla-allele",
+        "path": "DiagnosticReport.result",
+        "sliceName": "hla-allele",
+        "short": "HLA Allele",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-allele"
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

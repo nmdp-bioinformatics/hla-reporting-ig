@@ -1,0 +1,251 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "hla-allele",
+  "url": "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-allele",
+  "version": "0.1.0",
+  "name": "HLAallele",
+  "title": "HLA Allele Observation",
+  "status": "active",
+  "description": "HLA Allele profile of haplotype observation",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "84414-2",
+              "system": "http://loinc.org"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Observation.valueCodeableConcept",
+        "path": "Observation.valueCodeableConcept"
+      },
+      {
+        "id": "Observation.valueCodeableConcept.coding",
+        "path": "Observation.valueCodeableConcept.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open",
+          "description": "slicing on valueCodeableConcept"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.valueCodeableConcept.coding:GL",
+        "path": "Observation.valueCodeableConcept.coding",
+        "sliceName": "GL",
+        "short": "GL String Code",
+        "definition": "The Genotype List String Code code system defines a syntax for using the Genotype List String (GL String) grammar in association with a gene family namespace. The GL String Code is composed of three required fields in a string separated by a “#” character. These fields, in order, are: 1) Gene family namespace, 2) version of the nomenclature, or the date when teh GL String was created, and 3) GL String.",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.valueCodeableConcept.coding:GL.system",
+        "path": "Observation.valueCodeableConcept.coding.system",
+        "min": 1,
+        "fixedUri": "http://glstring.org"
+      },
+      {
+        "id": "Observation.valueCodeableConcept.coding:GL.code",
+        "path": "Observation.valueCodeableConcept.coding.code",
+        "min": 1,
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "GLSC",
+            "severity": "warning",
+            "human": "Use GL String Code to report HLA genotype",
+            "expression": "matches('^hla#.+')",
+            "source": "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-allele"
+          }
+        ]
+      },
+      {
+        "id": "Observation.derivedFrom",
+        "path": "Observation.derivedFrom",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "profile",
+              "path": "$this.resolve()"
+            }
+          ],
+          "rules": "open",
+          "description": "slice derivedFrom based on profile"
+        }
+      },
+      {
+        "id": "Observation.derivedFrom:hla-sequence",
+        "path": "Observation.derivedFrom",
+        "sliceName": "hla-sequence",
+        "short": "HLA Molecular Sequence",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-molecularsequence"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.derivedFrom:hla-allele",
+        "path": "Observation.derivedFrom",
+        "sliceName": "hla-allele",
+        "short": "HLA Allele",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-allele"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code"
+            }
+          ],
+          "rules": "open",
+          "ordered": false,
+          "description": "slice based on component.code pattern"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:gene-studied",
+        "path": "Observation.component",
+        "sliceName": "gene-studied",
+        "short": "Gene studied [ID]",
+        "definition": "A gene targeted for mutation analysis, identified in HUGO Gene Nomenclature Committee (HGNC) notation. The required code is HGNC gene ID. Gene IDs are of the format HGNC:n, where n is a unique number. For example, the HGNC identifier for the HLA-A gene is HGNC:4931. The display text associated with the code should be the HGNC official gene symbol. For example, the official gene symbol for 'major histocompatibility complex, class I, A' is HLA-A.",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:gene-studied.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "48018-6",
+              "system": "http://loinc.org"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:gene-studied.value[x]",
+        "path": "Observation.component.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:gene-studied.valueCodeableConcept",
+        "path": "Observation.component.valueCodeableConcept",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.nmdp.org/ig/hla-reporting/ValueSet/hla-geneid-valueset"
+        }
+      }
+    ]
+  }
+}

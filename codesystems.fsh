@@ -2,7 +2,7 @@ CodeSystem: GLStringCS
 Title: "Genotype List String Code CodeSystem"
 Id: glstring-codesystem
 Description: "Genotype List String Codesystem used for HLA reporting"
-* ^url = "http://www.glstring.org"
+* ^url = "http://glstring.org"
 * ^compositional = true
 * ^version = "1.0"
 * ^status = #active

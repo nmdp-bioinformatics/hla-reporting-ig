@@ -1,0 +1,52 @@
+{
+  "resourceType": "Observation",
+  "id": "Versiti-tarr03-HLA-A-Allele1",
+  "meta": {
+    "profile": [
+      "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-allele"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "84414-2",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "48018-6",
+            "system": "http://loinc.org"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "HGNC:4931",
+            "system": "http://www.genenames.org/geneId",
+            "display": "HLA-A"
+          }
+        ]
+      }
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://glstring.org",
+        "code": "hla#3.28.0#HLA-A*02:01:01:01/HLA-A*02:01:01:16/HLA-A*02:01:01:31/HLA-A*02:01:01:50"
+      }
+    ]
+  },
+  "status": "final",
+  "derivedFrom": [
+    {
+      "reference": "MolecularSequence/Versiti-03-HLA-A-Sequence1"
+    }
+  ]
+}

@@ -11,8 +11,7 @@ RuleSet: HLABaseObservation
 * component[gene-studied].code = LNC#48018-6  // Gene studied [ID]
 * component[gene-studied].value[x] only CodeableConcept
 * component[gene-studied].valueCodeableConcept 1..1
-// * component[gene-studied].valueCodeableConcept from HLAGeneIdVS
-
+* component[gene-studied].valueCodeableConcept from HLAGeneIdVS
 
 * value[x] only CodeableConcept 
 // * valueCodeableConcept ^patternCodeableConcept.coding.system = "http://glstring.org"

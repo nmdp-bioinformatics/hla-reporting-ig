@@ -1,0 +1,59 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "HLA-AB-SummaryReportExample",
+  "meta": {
+    "profile": [
+      "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-summary-report"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-genotype-summary",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:01:02^HLA-B*57:01:01:01+HLA-B*15:01:01:01",
+            "system": "http://glstring.org"
+          }
+        ]
+      }
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "81247-9"
+      },
+      {
+        "system": "http://www.genenames.org/genegroup",
+        "code": "588"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "type": "Patient",
+    "identifier": {
+      "system": "http://example.org/mysubject_identifers",
+      "value": "1234"
+    }
+  },
+  "specimen": [
+    {
+      "type": "Specimen",
+      "identifier": {
+        "system": "http://example.org/myspecimen_identifiers",
+        "value": "6789"
+      }
+    }
+  ],
+  "result": [
+    {
+      "reference": "Observation/HLA-A-GenotypeExample"
+    },
+    {
+      "reference": "Observation/HLA-B-GenotypeExample"
+    }
+  ]
+}

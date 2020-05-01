@@ -31,10 +31,10 @@ Description:    "HLA Summary Report profile of genomics report"
 * code.coding[HLAGeneGroup].system = "http://www.genenames.org/genegroup" (exactly)
 * code.coding[HLAGeneGroup].code = #588  (exactly) // "Histocompatibility complex (HLA)"
 
-* result ^slicing.discriminator.type = #pattern
-* result ^slicing.discriminator.path = "$this.resolve().code"
+* result ^slicing.discriminator[0].type = #pattern
+* result ^slicing.discriminator[0].path = "$this.resolve().code"
 * result ^slicing.rules = #open
-* result ^slicing.description = "slice result based on pattern of code"
+* result ^slicing.description = "slice on pattern of Obs.code"
 * result contains 
     hla-genotype 0..* MS and
     hla-allele 0..* MS
@@ -62,7 +62,7 @@ Usage: #example
 Title:      "HLA-A, HLA-B Summary Report Example"
 Description: "Example of HLA summary report"
 // * id = "hla-a-summaryreport-ex1"
-* extension[GenotypeSummary].valueCodeableConcept = GLSCodeSystem#hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:01:02^#HLA-B*57:01:01:01+HLA-B*15:01:01:01
+* extension[GenotypeSummary].valueCodeableConcept = GLSCodeSystem#hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:01:02^HLA-B*57:01:01:01+HLA-B*15:01:01:01
 * status = #final
 // * code.coding[code] = LNC#81247-9 "Master HL7 genetic variant reporting panel" (exactly)
 // * code.coding[HLAGeneGroup] = HLAGenegroupCS#588 "Histocompatibility complex (HLA)" (exactly)

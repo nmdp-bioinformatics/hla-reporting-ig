@@ -1,2 +1,9 @@
-build/
-.DStore
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+**/input-cache
+**/temp
+**/build/output
+**/org.hl7.fhir.publisher.jar

@@ -1,0 +1,52 @@
+{
+  "resourceType": "Observation",
+  "id": "HLA-B-AlleleExample1",
+  "meta": {
+    "profile": [
+      "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-allele"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "84414-2",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "48018-6",
+            "system": "http://loinc.org"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "HGNC:4932",
+            "system": "http://www.genenames.org/geneId",
+            "display": "HLA-B"
+          }
+        ]
+      }
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://glstring.org",
+        "code": "hla#3.25.0#HLA-B*57:01:01:01"
+      }
+    ]
+  },
+  "status": "final",
+  "derivedFrom": [
+    {
+      "reference": "MolecularSequence/HLA-B-SequenceExample1"
+    }
+  ]
+}

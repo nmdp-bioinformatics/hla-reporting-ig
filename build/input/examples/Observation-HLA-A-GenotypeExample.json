@@ -1,0 +1,52 @@
+{
+  "resourceType": "Observation",
+  "id": "HLA-A-GenotypeExample",
+  "meta": {
+    "profile": [
+      "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-genotype"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "84413-4",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "48018-6",
+            "system": "http://loinc.org"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "HGNC:4931",
+            "system": "http://www.genenames.org/geneId",
+            "display": "HLA-A"
+          }
+        ]
+      }
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://glstring.org",
+        "code": "hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:02"
+      }
+    ]
+  },
+  "status": "final",
+  "derivedFrom": [
+    {
+      "reference": "Observation/HLA-A-AlleleExample2"
+    }
+  ]
+}
