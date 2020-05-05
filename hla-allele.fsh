@@ -12,6 +12,7 @@ InstanceOf: hla-allele
 Usage:      #example
 Title:      "HLA-A*01:01:01:01 Allele Example"
 Description: "Example of HLA-A allele HLA-A*01:01:01:01 using IMGT/HLA 3.25 nomenclature"
+// * code.coding[0] = LNC#84413-4 "Haplotype display name"
 * status = #final
 * valueCodeableConcept.coding.code = #hla#3.25.0#HLA-A*01:01:01:01
 * component[gene-studied].valueCodeableConcept = HLAGeneIdCS#HGNC:4931 "HLA-A"
@@ -24,6 +25,7 @@ InstanceOf: hla-allele
 Usage:      #example
 Title:      "HLA-A*01:02 Allele Example"
 Description: "Example of HLA-A allele HLA-A*01:02 using IMGT/HLA 3.25 nomenclature"
+// * code.coding[0] = LNC#84413-4 "Haplotype display name"
 * status = #final
 * valueCodeableConcept.coding.code = #hla#3.25.0#HLA-A*01:02
 * component[gene-studied].valueCodeableConcept = HLAGeneIdCS#HGNC:4931 "HLA-A"
@@ -36,6 +38,7 @@ InstanceOf: hla-allele
 Usage:      #example
 Title:      "HLA-B*57:01:01:01 Allele Example"
 Description: "Example of HLA-B*57:01:01:01 allele using IMGT/HLA 3.25 nomenclature"
+// * code.coding[0] = LNC#84413-4 "Haplotype display name"
 * status = #final
 * valueCodeableConcept.coding.code = #hla#3.25.0#HLA-B*57:01:01:01
 * component[gene-studied].valueCodeableConcept = HLAGeneIdCS#HGNC:4932 "HLA-B"
@@ -47,6 +50,7 @@ InstanceOf: hla-allele
 Usage:      #example
 Title:      "HLA-B*15:01:01:01 Allele Example"
 Description: "Example of HLA-B*15:01:01:01 allele using IMGT/HLA 3.25 nomenclature"
+// * code.coding[0] = LNC#84413-4 "Haplotype display name"
 * status = #final
 * valueCodeableConcept.coding.code = #hla#3.25.0#HLA-B*15:01:01:01
 * component[gene-studied].valueCodeableConcept = HLAGeneIdCS#HGNC:4932 "HLA-B"

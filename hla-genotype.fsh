@@ -15,7 +15,8 @@ Description: "Example of HLA-A genotyping using IMGT/HLA 3.25 nomenclature"
 * status = #final
 * code = LNC#84413-4 // Genotype display name
 * valueCodeableConcept.coding[GL] = GLSCodeSystem#hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:02
-// * component[gene-studied].code = LNC#HGNC:4931 "HLA-A"
+// * component[gene-studied].code = LNC#
+* component[gene-studied].code = LNC#48018-6 // Gene studied
 * component[gene-studied].valueCodeableConcept = HLAGeneIdCS#HGNC:4931 "HLA-A"
 * derivedFrom = Reference(HLA-A-AlleleExample1)
 * derivedFrom = Reference(HLA-A-AlleleExample2)
@@ -29,6 +30,7 @@ Description: "Example of HLA-B genotyping using IMGT/HLA 3.25 nomenclature"
 * code = LNC#84413-4 // Genotype display name
 * valueCodeableConcept.coding[GL] = GLSCodeSystem#hla#3.25.0#HLA-B*57:01:01:01+HLA-B*15:01:01:01
 // * component[gene-studied].code = LNC#LNC#48018-6 // Gene studied [ID]
+* component[gene-studied].code = LNC#48018-6 // Gene studied
 * component[gene-studied].valueCodeableConcept = HLAGeneIdCS#HGNC:4932 "HLA-B"
 * derivedFrom = Reference(HLA-B-AlleleExample1)
 * derivedFrom = Reference(HLA-B-AlleleExample2)
