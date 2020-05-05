@@ -1,11 +1,15 @@
 Instance:   Versiti-tarr03-HLA-A-Genotype
 InstanceOf: hla-genotype
 Usage: #example
-Title:      "Versity Sample 03: HLA-A Genotype"
+Title:      "Versiti Sample 03: HLA-A Genotype"
 Description: "HLA-A genotyping of Sample 03 from Versiti,  using IMGT/HLA 3.28 nomenclature"
 * status = #final
+* code = LNC#84413-4 // Genotype display name
+* effectiveDateTime = "2020-04-21T15:14:55.4574079Z"
+* specimen.identifier.system = "http://versiti.org"
+* specimen.identifier.value = "03-"
 * valueCodeableConcept.coding[GL] = GLSCodeSystem#hla#3.28.0##hla#3.28.0#HLA-A*02:01:01:01/HLA-A*02:01:01:16/HLA-A*02:01:01:31/HLA-A*02:01:01:50+HLA-A*24:02:01:01/HLA-A*24:02:01:16
-// * component[gene-studied].code = LNC#HGNC:4931 "HLA-A"
+* component[gene-studied].code = LNC#48018-6 // Gene studied
 * component[gene-studied].valueCodeableConcept = HLAGeneIdCS#HGNC:4931 "HLA-A"
 * derivedFrom = Reference(Versiti-tarr03-HLA-A-Allele1)
 * derivedFrom = Reference(Versiti-tarr03-HLA-A-Allele2)
@@ -13,10 +17,15 @@ Description: "HLA-A genotyping of Sample 03 from Versiti,  using IMGT/HLA 3.28 n
 Instance:   Versiti-tarr03-HLA-A-Allele1
 InstanceOf: hla-allele
 Usage:      #example
-Title:      "HLA-A Allele 1"
-Description: "Versity Sample 03: HLA-A Allele 1 using IMGT/HLA 3.38.0 nomenclature"
+Title:      "Versiti Sample 03: HLA-A Allele 1"
+Description: "Versiti Sample 03: HLA-A Allele 1 using IMGT/HLA 3.38.0 nomenclature"
 * status = #final
+* code = LNC#84414-2 // Haplotype display name
+* effectiveDateTime = "2020-04-21T15:14:55.4574079Z"
+* specimen.identifier.system = "http://versiti.org"
+* specimen.identifier.value = "03-"
 * valueCodeableConcept.coding.code = #hla#3.28.0#HLA-A*02:01:01:01/HLA-A*02:01:01:16/HLA-A*02:01:01:31/HLA-A*02:01:01:50
+* component[gene-studied].code = LNC#48018-6 // Gene studied
 * component[gene-studied].valueCodeableConcept = HLAGeneIdCS#HGNC:4931 "HLA-A"
 * derivedFrom = Reference(Versiti-03-HLA-A-Sequence1)
 
@@ -24,20 +33,27 @@ Instance:   Versiti-tarr03-HLA-A-Allele2
 InstanceOf: hla-allele
 Usage:      #example
 Title:      "Versiti Sample 03: HLA-A Allele 2"
-Description: "Versity Sample 03: HLA-A Allele 2 using IMGT/HLA 3.38.0 nomenclature"
+Description: "Versiti Sample 03: HLA-A Allele 2 using IMGT/HLA 3.38.0 nomenclature"
 * status = #final
+* code = LNC#84414-2 // Haplotype display name
+* effectiveDateTime = "2020-04-21T15:14:55.4574079Z"
+* specimen.identifier.system = "http://versiti.org"
+* specimen.identifier.value = "03-"
 * valueCodeableConcept.coding.code = #hla#3.28.0#HLA-A*24:02:01:01/HLA-A*24:02:01:16
+* component[gene-studied].code = LNC#48018-6 // Gene studied
 * component[gene-studied].valueCodeableConcept = HLAGeneIdCS#HGNC:4931 "HLA-A"
 * derivedFrom = Reference(Versiti-03-HLA-A-Sequence2)
 
 Instance:   Versiti-03-HLA-A-Sequence1
 InstanceOf: hla-molecularsequence
 Usage: #example
-Title:      "HLA-A*24:02:01:01 Sequence"
-Description: "HLA-A*24:02:01:01 sequence"
+Title:      "Versiti Sample 03: HLA-A Sequence 1"
+Description: "Versiti Sample 03: HLA-A Sequence 1"
 * coordinateSystem = 0
-// * type = #dna
-// * referenceSeq.referenceSeqId.coding.system = "http://www.ebi.ac.uk/ipd/imgt/hla"
+* specimen.identifier.system = "http://versiti.org"
+* specimen.identifier.value = "03-"
+* type = #dna
+* referenceSeq.referenceSeqId.coding.system = "http://www.ebi.ac.uk/ipd/imgt/hla"
 * referenceSeq.referenceSeqId.coding.code = #HLA00050
 * referenceSeq.referenceSeqId.coding.version = "3.28.0"
 * referenceSeq.referenceSeqId.coding.display = "HLA-A*24:02:01:01"
@@ -48,11 +64,11 @@ Description: "HLA-A*24:02:01:01 sequence"
 Instance:   Versiti-03-HLA-A-Sequence2
 InstanceOf: hla-molecularsequence
 Usage: #example
-Title:      "HLA-A*02:01:01:01 Sequence"
-Description: "HLA-A*02:01:01:01 Sequence"
+Title:      "Versiti Sample 03: HLA-A Sequence 2"
+Description: "Versiti Sample 03: HLA-A Sequence 2"
 * coordinateSystem = 0
-// * type = #dna
-// * referenceSeq.referenceSeqId.coding.system = "http://www.ebi.ac.uk/ipd/imgt/hla"
+* type = #dna
+* referenceSeq.referenceSeqId.coding.system = "http://www.ebi.ac.uk/ipd/imgt/hla"
 * referenceSeq.referenceSeqId.coding.code = #HLA00005
 * referenceSeq.referenceSeqId.coding.version = "3.28.0"
 * referenceSeq.referenceSeqId.coding.display = "HLA-A*02:01:01:01"

@@ -44,6 +44,13 @@
     ]
   },
   "status": "final",
+  "effectiveDateTime": "2020-04-21T15:14:55.4574079Z",
+  "specimen": {
+    "identifier": {
+      "system": "http://versiti.org",
+      "value": "03-"
+    }
+  },
   "derivedFrom": [
     {
       "reference": "Observation/Versiti-tarr03-HLA-A-Allele2"

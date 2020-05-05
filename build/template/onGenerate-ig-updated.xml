@@ -17,7 +17,7 @@
    <name value="HLAReportingImplementationGuide"/>
    <title value="HLA Reporting Implementation Guide"/>
    <status value="active"/>
-   <date value="2020-05-01T13:47:54-05:00"/>
+   <date value="2020-05-05T15:21:16-05:00"/>
    <publisher value="NMDP/Be The Match"/>
    <contact>
       <name value="Bob Milius"/>
@@ -363,8 +363,8 @@
          <reference>
             <reference value="MolecularSequence/Versiti-03-HLA-A-Sequence1"/>
          </reference>
-         <name value="HLA-A*24:02:01:01 Sequence"/>
-         <description value="HLA-A*24:02:01:01 sequence"/>
+         <name value="Versiti Sample 03: HLA-A Sequence 1"/>
+         <description value="Versiti Sample 03: HLA-A Sequence 1"/>
          <exampleCanonical value="http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-molecularsequence"/>
          <groupingId value="_ex_example"/>
       </resource>
@@ -378,8 +378,8 @@
          <reference>
             <reference value="MolecularSequence/Versiti-03-HLA-A-Sequence2"/>
          </reference>
-         <name value="HLA-A*02:01:01:01 Sequence"/>
-         <description value="HLA-A*02:01:01:01 Sequence"/>
+         <name value="Versiti Sample 03: HLA-A Sequence 2"/>
+         <description value="Versiti Sample 03: HLA-A Sequence 2"/>
          <exampleCanonical value="http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-molecularsequence"/>
          <groupingId value="_ex_example"/>
       </resource>
@@ -393,8 +393,8 @@
          <reference>
             <reference value="Observation/Versiti-tarr03-HLA-A-Allele1"/>
          </reference>
-         <name value="HLA-A Allele 1"/>
-         <description value="Versity Sample 03: HLA-A Allele 1 using IMGT/HLA 3.38.0 nomenclature"/>
+         <name value="Versiti Sample 03: HLA-A Allele 1"/>
+         <description value="Versiti Sample 03: HLA-A Allele 1 using IMGT/HLA 3.38.0 nomenclature"/>
          <exampleCanonical value="http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-allele"/>
          <groupingId value="_ex_example"/>
       </resource>
@@ -409,7 +409,7 @@
             <reference value="Observation/Versiti-tarr03-HLA-A-Allele2"/>
          </reference>
          <name value="Versiti Sample 03: HLA-A Allele 2"/>
-         <description value="Versity Sample 03: HLA-A Allele 2 using IMGT/HLA 3.38.0 nomenclature"/>
+         <description value="Versiti Sample 03: HLA-A Allele 2 using IMGT/HLA 3.38.0 nomenclature"/>
          <exampleCanonical value="http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-allele"/>
          <groupingId value="_ex_example"/>
       </resource>
@@ -423,7 +423,7 @@
          <reference>
             <reference value="Observation/Versiti-tarr03-HLA-A-Genotype"/>
          </reference>
-         <name value="Versity Sample 03: HLA-A Genotype"/>
+         <name value="Versiti Sample 03: HLA-A Genotype"/>
          <description value="HLA-A genotyping of Sample 03 from Versiti,  using IMGT/HLA 3.28 nomenclature"/>
          <exampleCanonical value="http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-genotype"/>
          <groupingId value="_ex_example"/>
@@ -543,17 +543,17 @@
             </page>
             <page>
                <nameUrl value="MolecularSequence-Versiti-03-HLA-A-Sequence1.html"/>
-               <title value="HLA-A*24:02:01:01 Sequence"/>
+               <title value="Versiti Sample 03: HLA-A Sequence 1"/>
                <generation value="generated"/>
             </page>
             <page>
                <nameUrl value="MolecularSequence-Versiti-03-HLA-A-Sequence2.html"/>
-               <title value="HLA-A*02:01:01:01 Sequence"/>
+               <title value="Versiti Sample 03: HLA-A Sequence 2"/>
                <generation value="generated"/>
             </page>
             <page>
                <nameUrl value="Observation-Versiti-tarr03-HLA-A-Allele1.html"/>
-               <title value="HLA-A Allele 1"/>
+               <title value="Versiti Sample 03: HLA-A Allele 1"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -563,7 +563,7 @@
             </page>
             <page>
                <nameUrl value="Observation-Versiti-tarr03-HLA-A-Genotype.html"/>
-               <title value="Versity Sample 03: HLA-A Genotype"/>
+               <title value="Versiti Sample 03: HLA-A Genotype"/>
                <generation value="generated"/>
             </page>
          </page>
@@ -579,6 +579,14 @@
       <parameter>
          <code value="show-inherited-invariants"/>
          <value value="false"/>
+      </parameter>
+      <parameter>
+         <code value="special-url"/>
+         <value value="http://www.genenames.org/geneId"/>
+      </parameter>
+      <parameter>
+         <code value="special-url"/>
+         <value value="http://glstring.org"/>
       </parameter>
       <parameter>
          <code value="path-resource"/>
