@@ -1,0 +1,66 @@
+# ╭────────────────────────────────────────────────────────────────────────────────────────────────╮
+# │  ACTION REQUIRED: REVIEW AND EDIT THIS FILE TO ENSURE IT ACCURATELY REFLECTS YOUR PROJECT!     │
+# │                                                                                                │
+# │  This file was generated from your existing project files and will be used for SUSHI           │
+# │  configuration from now on. You may delete your package.json as it is no longer needed.        │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+# ╭─────────────────────────────ImplementationGuide-hla-reporting.json─────────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see:                                                                    │
+# │  http://build.fhir.org/ig/HL7/fhir-shorthand/branches/beta/sushi.html#ig-development           │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: hla-reporting
+canonical: http://fhir.nmdp.org/ig/hla-reporting
+version: 0.1.0
+name: HLAReportingImplementationGuide
+title: HLA Reporting Implementation Guide
+status: active
+publisher: NMDP/Be The Match
+contact:
+  - name: Bob Milius
+    telecom:
+      - system: email
+        value: mailto:bmilius@nmdp.org
+description: How to report HLA genotyping using FHIR
+license: Apache-2.0
+fhirVersion: 4.0.1
+dependencies:
+  hl7.fhir.uv.genomics-reporting: 1.0.0
+parameters:
+  show-inherited-invariants: true
+  special-url: 
+    - http://www.genenames.org/geneId
+    - http://glstring.org
+copyrightYear: 2019+
+releaseLabel: STU1
+
+# ╭─────────────────────────────────────────────ig.ini─────────────────────────────────────────────╮
+# │  To control the ig.ini using this config, uncomment and set the "template" property.           │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+template: fhir.base.template
+
+# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
+# │  To control the menu.xml using this config, uncomment and set the "menu" property.             │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+# menu:
+#   IG Home: index.html
+#   Table of Contents: toc.html
+#   Background:
+#     Background: background.html
+#   Artifact Index: artifacts.html
+#   Support:
+#     "FHIR Spec ": "{{site.data.fhir.path}}index.html"
+
+# ╭───────────────────────────────────────package-list.json────────────────────────────────────────╮
+# │  To control the package-list.json using this config, uncomment and set the "history" property. │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+# history:
+#   introduction: An example of how FSH can be used to create an HLA reporting IG by
+#     constraing the genomics-reporting IG
+#   current:
+#     version: current
+#     desc: Draft
+#     path: http://fhir.nmdp.org/ig/hla-reporting
+#     status: ci-build
+#     current: true

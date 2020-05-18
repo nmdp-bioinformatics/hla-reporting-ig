@@ -150,9 +150,9 @@
         }
       },
       {
-        "id": "Observation.derivedFrom:hla-sequence",
+        "id": "Observation.derivedFrom:sequence",
         "path": "Observation.derivedFrom",
-        "sliceName": "hla-sequence",
+        "sliceName": "sequence",
         "short": "HLA Molecular Sequence",
         "type": [
           {
@@ -165,9 +165,9 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.derivedFrom:hla-allele",
+        "id": "Observation.derivedFrom:allele",
         "path": "Observation.derivedFrom",
-        "sliceName": "hla-allele",
+        "sliceName": "allele",
         "short": "HLA Allele",
         "type": [
           {

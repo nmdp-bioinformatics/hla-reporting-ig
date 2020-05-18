@@ -17,8 +17,7 @@
    <name value="HLAReportingImplementationGuide"/>
    <title value="HLA Reporting Implementation Guide"/>
    <status value="active"/>
-   <date value="2020-05-05T15:21:16-05:00"/>
-   <publisher value="NMDP/Be The Match"/>
+   <date value="2020-05-18T14:43:36-05:00"/>
    <contact>
       <name value="Bob Milius"/>
       <telecom>
@@ -353,81 +352,6 @@
          <exampleCanonical value="http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-molecularsequence"/>
          <groupingId value="_ex_example"/>
       </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="MolecularSequence"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="MolecularSequence-Versiti-03-HLA-A-Sequence1.html"/>
-         </extension>
-         <reference>
-            <reference value="MolecularSequence/Versiti-03-HLA-A-Sequence1"/>
-         </reference>
-         <name value="Versiti Sample 03: HLA-A Sequence 1"/>
-         <description value="Versiti Sample 03: HLA-A Sequence 1"/>
-         <exampleCanonical value="http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-molecularsequence"/>
-         <groupingId value="_ex_example"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="MolecularSequence"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="MolecularSequence-Versiti-03-HLA-A-Sequence2.html"/>
-         </extension>
-         <reference>
-            <reference value="MolecularSequence/Versiti-03-HLA-A-Sequence2"/>
-         </reference>
-         <name value="Versiti Sample 03: HLA-A Sequence 2"/>
-         <description value="Versiti Sample 03: HLA-A Sequence 2"/>
-         <exampleCanonical value="http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-molecularsequence"/>
-         <groupingId value="_ex_example"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="Observation"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="Observation-Versiti-tarr03-HLA-A-Allele1.html"/>
-         </extension>
-         <reference>
-            <reference value="Observation/Versiti-tarr03-HLA-A-Allele1"/>
-         </reference>
-         <name value="Versiti Sample 03: HLA-A Allele 1"/>
-         <description value="Versiti Sample 03: HLA-A Allele 1 using IMGT/HLA 3.38.0 nomenclature"/>
-         <exampleCanonical value="http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-allele"/>
-         <groupingId value="_ex_example"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="Observation"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="Observation-Versiti-tarr03-HLA-A-Allele2.html"/>
-         </extension>
-         <reference>
-            <reference value="Observation/Versiti-tarr03-HLA-A-Allele2"/>
-         </reference>
-         <name value="Versiti Sample 03: HLA-A Allele 2"/>
-         <description value="Versiti Sample 03: HLA-A Allele 2 using IMGT/HLA 3.38.0 nomenclature"/>
-         <exampleCanonical value="http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-allele"/>
-         <groupingId value="_ex_example"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="Observation"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="Observation-Versiti-tarr03-HLA-A-Genotype.html"/>
-         </extension>
-         <reference>
-            <reference value="Observation/Versiti-tarr03-HLA-A-Genotype"/>
-         </reference>
-         <name value="Versiti Sample 03: HLA-A Genotype"/>
-         <description value="HLA-A genotyping of Sample 03 from Versiti,  using IMGT/HLA 3.28 nomenclature"/>
-         <exampleCanonical value="http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-genotype"/>
-         <groupingId value="_ex_example"/>
-      </resource>
       <page>
          <nameUrl value="toc.html"/>
          <title value="Table of Contents"/>
@@ -541,31 +465,6 @@
                <title value="HLA-B*15:01:01:01 Sequence Example"/>
                <generation value="generated"/>
             </page>
-            <page>
-               <nameUrl value="MolecularSequence-Versiti-03-HLA-A-Sequence1.html"/>
-               <title value="Versiti Sample 03: HLA-A Sequence 1"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="MolecularSequence-Versiti-03-HLA-A-Sequence2.html"/>
-               <title value="Versiti Sample 03: HLA-A Sequence 2"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="Observation-Versiti-tarr03-HLA-A-Allele1.html"/>
-               <title value="Versiti Sample 03: HLA-A Allele 1"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="Observation-Versiti-tarr03-HLA-A-Allele2.html"/>
-               <title value="Versiti Sample 03: HLA-A Allele 2"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="Observation-Versiti-tarr03-HLA-A-Genotype.html"/>
-               <title value="Versiti Sample 03: HLA-A Genotype"/>
-               <generation value="generated"/>
-            </page>
          </page>
       </page>
       <parameter>
@@ -578,7 +477,7 @@
       </parameter>
       <parameter>
          <code value="show-inherited-invariants"/>
-         <value value="false"/>
+         <value value="true"/>
       </parameter>
       <parameter>
          <code value="special-url"/>
@@ -587,6 +486,10 @@
       <parameter>
          <code value="special-url"/>
          <value value="http://glstring.org"/>
+      </parameter>
+      <parameter>
+         <code value="autoload-resources"/>
+         <value value="true"/>
       </parameter>
       <parameter>
          <code value="path-resource"/>

@@ -7,7 +7,9 @@
 # *************************************************************************************************
 
 publisher_jar=org.hl7.fhir.publisher.jar
-input_cache_path=./input-cache/
+# input_cache_path=./input-cache/
+localbin=~/.local/bin/
+
 set -e
 echo Checking internet connection...
 curl -sSf tx.fhir.org > /dev/null
@@ -22,7 +24,8 @@ fi
 
 echo "$txoption"
 
-publisher=$input_cache_path/$publisher_jar
+# publisher=$input_cache_path/$publisher_jar
+publisher=$localbin/$publisher_jar
 if test -f "$publisher"; then
 	java -jar $publisher -ig ig.ini $txoption $*
 

@@ -6,7 +6,6 @@ Title:          "HLA Genotype Observation"
 Description:    "HLA Genotype profile of Observation"
 * code = LNC#84413-4 // Genotype display name
 
-
 Instance:   HLA-A-GenotypeExample
 InstanceOf: hla-genotype
 Usage: #example
@@ -18,8 +17,8 @@ Description: "Example of HLA-A genotyping using IMGT/HLA 3.25 nomenclature"
 // * component[gene-studied].code = LNC#
 * component[gene-studied].code = LNC#48018-6 // Gene studied
 * component[gene-studied].valueCodeableConcept = HLAGeneIdCS#HGNC:4931 "HLA-A"
-* derivedFrom = Reference(HLA-A-AlleleExample1)
-* derivedFrom = Reference(HLA-A-AlleleExample2)
+* derivedFrom[allele][0] = Reference(HLA-A-AlleleExample1)
+* derivedFrom[allele][1] = Reference(HLA-A-AlleleExample2)
 
 Instance:   HLA-B-GenotypeExample
 InstanceOf: hla-genotype
@@ -32,5 +31,5 @@ Description: "Example of HLA-B genotyping using IMGT/HLA 3.25 nomenclature"
 // * component[gene-studied].code = LNC#LNC#48018-6 // Gene studied [ID]
 * component[gene-studied].code = LNC#48018-6 // Gene studied
 * component[gene-studied].valueCodeableConcept = HLAGeneIdCS#HGNC:4932 "HLA-B"
-* derivedFrom = Reference(HLA-B-AlleleExample1)
-* derivedFrom = Reference(HLA-B-AlleleExample2)
+* derivedFrom[allele][0] = Reference(HLA-B-AlleleExample1)
+* derivedFrom[allele][1] = Reference(HLA-B-AlleleExample2)

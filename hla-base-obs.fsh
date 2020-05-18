@@ -1,4 +1,18 @@
 RuleSet: HLABaseObservation
+// * component ^slicing.discriminator.type = #pattern
+// * component ^slicing.discriminator.path = "code"
+// * component ^slicing.rules = #open
+// * component ^slicing.ordered = false
+// * component ^slicing.description = "slice based on component.code pattern"
+// * component contains 
+//     gene-studied 1..1 MS
+// * component[gene-studied] ^short = "Gene studied [ID]"
+// * component[gene-studied] ^definition = "A gene targeted for mutation analysis, identified in HUGO Gene Nomenclature Committee (HGNC) notation. The required code is HGNC gene ID. Gene IDs are of the format HGNC:n, where n is a unique number. For example, the HGNC identifier for the HLA-A gene is HGNC:4931. The display text associated with the code should be the HGNC official gene symbol. For example, the official gene symbol for 'major histocompatibility complex, class I, A' is HLA-A."
+// * component[gene-studied].code = LNC#48018-6  // Gene studied [ID]
+// * component[gene-studied].value[x] only CodeableConcept
+// * component[gene-studied].valueCodeableConcept 1..1
+// * component[gene-studied].valueCodeableConcept from HLAGeneIdVS
+
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
@@ -33,9 +47,11 @@ RuleSet: HLABaseObservation
 * derivedFrom ^slicing.rules = #open
 * derivedFrom ^slicing.description = "slice derivedFrom based on profile"
 * derivedFrom contains 
-    hla-sequence 0..* MS and
-    hla-allele 0..* MS
-* derivedFrom[hla-allele] only Reference(HLAallele)
-* derivedFrom[hla-allele] ^short = "HLA Allele"
-* derivedFrom[hla-sequence] only Reference(HLAMolecularSequence)
-* derivedFrom[hla-sequence] ^short = "HLA Molecular Sequence"
+    sequence 0..* MS and
+    allele 0..* MS
+// * derivedFrom[hla-allele] only Reference(HLAallele)
+* derivedFrom[allele] only Reference(hla-allele)
+* derivedFrom[allele] ^short = "HLA Allele"
+// * derivedFrom[hla-sequence] only Reference(HLAMolecularSequence)
+* derivedFrom[sequence] only Reference(hla-molecularsequence)
+* derivedFrom[sequence] ^short = "HLA Molecular Sequence"

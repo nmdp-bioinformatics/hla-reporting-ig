@@ -17,8 +17,8 @@ lists those files generated from project configs or the contents in the ig-data 
 | _genonce.sh                                                      | generated |                                                                             |
 | _updatePublisher.bat                                             | generated |                                                                             |
 | _updatePublisher.sh                                              | generated |                                                                             |
-| ig.ini                                                           | generated | ../ig-data/ig.ini, ../package.json                                          |
-| input/ImplementationGuide-hla-reporting.json                     | generated | ../ig-data/ig.ini, ../package.json, {all input resources and pages}         |
+| ig.ini                                                           | generated | ../config.yaml                                                              |
+| input/ImplementationGuide-hla-reporting.json                     | generated | ../config.yaml, {all input resources and pages}                             |
 | input/ignoreWarnings.txt                                         | generated |                                                                             |
 | input/images/.DS_Store                                           | copied    | ../ig-data/input/images/.DS_Store                                           |
 | input/images/histocompatibility-fig1-hla-a-genotype.png          | copied    | ../ig-data/input/images/histocompatibility-fig1-hla-a-genotype.png          |
@@ -28,5 +28,3 @@ lists those files generated from project configs or the contents in the ig-data 
 | input/includes/menu.xml                                          | copied    | ../ig-data/input/includes/menu.xml                                          |
 | input/pagecontent/background.xml                                 | copied    | ../ig-data/input/pagecontent/background.xml                                 |
 | input/pagecontent/index.xml                                      | copied    | ../ig-data/input/pagecontent/index.xml                                      |
-| package-list.json                                                | copied    | ../ig-data/package-list.json                                                |
-| package.json                                                     | copied    | ../package.json                                                             |

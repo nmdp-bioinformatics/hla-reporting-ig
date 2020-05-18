@@ -131,7 +131,7 @@
             }
           ],
           "rules": "open",
-          "description": "slice on pattern of Obs.code"
+          "description": "slice result based on pattern of observation.code"
         }
       },
       {

@@ -6,7 +6,6 @@
   "name": "HLAReportingImplementationGuide",
   "title": "HLA Reporting Implementation Guide",
   "status": "active",
-  "publisher": "NMDP/Be The Match",
   "contact": [
     {
       "name": "Bob Milius",
@@ -184,46 +183,6 @@
         "name": "HLA-B*15:01:01:01 Sequence Example",
         "description": "Example of HLA-B*15:01:01:01 sequence",
         "exampleCanonical": "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-molecularsequence"
-      },
-      {
-        "reference": {
-          "reference": "MolecularSequence/Versiti-03-HLA-A-Sequence1"
-        },
-        "name": "Versiti Sample 03: HLA-A Sequence 1",
-        "description": "Versiti Sample 03: HLA-A Sequence 1",
-        "exampleCanonical": "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-molecularsequence"
-      },
-      {
-        "reference": {
-          "reference": "MolecularSequence/Versiti-03-HLA-A-Sequence2"
-        },
-        "name": "Versiti Sample 03: HLA-A Sequence 2",
-        "description": "Versiti Sample 03: HLA-A Sequence 2",
-        "exampleCanonical": "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-molecularsequence"
-      },
-      {
-        "reference": {
-          "reference": "Observation/Versiti-tarr03-HLA-A-Allele1"
-        },
-        "name": "Versiti Sample 03: HLA-A Allele 1",
-        "description": "Versiti Sample 03: HLA-A Allele 1 using IMGT/HLA 3.38.0 nomenclature",
-        "exampleCanonical": "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-allele"
-      },
-      {
-        "reference": {
-          "reference": "Observation/Versiti-tarr03-HLA-A-Allele2"
-        },
-        "name": "Versiti Sample 03: HLA-A Allele 2",
-        "description": "Versiti Sample 03: HLA-A Allele 2 using IMGT/HLA 3.38.0 nomenclature",
-        "exampleCanonical": "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-allele"
-      },
-      {
-        "reference": {
-          "reference": "Observation/Versiti-tarr03-HLA-A-Genotype"
-        },
-        "name": "Versiti Sample 03: HLA-A Genotype",
-        "description": "HLA-A genotyping of Sample 03 from Versiti,  using IMGT/HLA 3.28 nomenclature",
-        "exampleCanonical": "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-genotype"
       }
     ],
     "page": {
@@ -254,7 +213,7 @@
       },
       {
         "code": "show-inherited-invariants",
-        "value": "false"
+        "value": "true"
       },
       {
         "code": "special-url",

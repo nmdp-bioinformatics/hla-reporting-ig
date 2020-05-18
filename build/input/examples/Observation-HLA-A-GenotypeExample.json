@@ -46,6 +46,9 @@
   "status": "final",
   "derivedFrom": [
     {
+      "reference": "Observation/HLA-A-AlleleExample1"
+    },
+    {
       "reference": "Observation/HLA-A-AlleleExample2"
     }
   ]
