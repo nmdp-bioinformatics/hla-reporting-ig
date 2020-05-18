@@ -114,6 +114,14 @@
       },
       {
         "reference": {
+          "reference": "Bundle/HLA-A-BundleExample1"
+        },
+        "name": "HLA-A Bundle Example 1",
+        "description": "Example of HLA-A genotyping bundle using IMGT/HLA 3.25 nomenclature",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/HLA-A-GenotypeExample"
         },
         "name": "HLA-A Genotype Example (HLA-A*01:01:01:01+HLA-A*01:02)",

@@ -1,0 +1,120 @@
+{
+  "resourceType": "Bundle",
+  "id": "HLA-A-BundleExample1",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "HLA-AB-SummaryReportExample-Bundle",
+        "meta": {
+          "profile": [
+            "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-summary-report"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-genotype-summary",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:01:02^HLA-B*57:01:01:01+HLA-B*15:01:01:01",
+                  "system": "http://glstring.org"
+                }
+              ]
+            }
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "81247-9",
+              "display": "Master HL7 genetic variant reporting panel"
+            },
+            {
+              "system": "http://www.genenames.org/genegroup",
+              "code": "588",
+              "display": "Histocompatibility complex (HLA)"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "type": "Patient",
+          "identifier": {
+            "system": "http://example.org/mysubject_identifers",
+            "value": "1234"
+          }
+        },
+        "specimen": [
+          {
+            "type": "Specimen",
+            "identifier": {
+              "system": "http://example.org/myspecimen_identifiers",
+              "value": "6789"
+            }
+          }
+        ],
+        "result": [
+          {
+            "reference": "\"urn:uuid:8e6b5bd2-3786-4637-919b-4da121adce54\""
+          }
+        ]
+      },
+      "fullUrl": "urn:uuid:1fb210d2-fa8c-404f-a2c3-1847e97737df"
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "HLA-A-GenotypeExample-Bundle",
+        "meta": {
+          "profile": [
+            "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-genotype"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "84413-4",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "48018-6",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "HGNC:4931",
+                  "system": "http://www.genenames.org/geneId",
+                  "display": "HLA-A"
+                }
+              ]
+            }
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://glstring.org",
+              "code": "hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:02"
+            }
+          ]
+        },
+        "status": "final"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8e6b5bd2-3786-4637-919b-4da121adce54"
+    }
+  ]
+}
