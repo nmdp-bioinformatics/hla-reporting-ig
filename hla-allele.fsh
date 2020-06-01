@@ -46,7 +46,8 @@ Description: "Example of HLA-A allele HLA-A*01:01:01:01 using IMGT/HLA 3.25 nome
 * status = #final
 * valueCodeableConcept.coding.code = #hla#3.25.0#HLA-A*01:01:01:01
 * component[gene-studied].valueCodeableConcept = HLAGeneIDCS#HGNC:4931 "HLA-A"
-* derivedFrom[hla-sequence].reference = "http://example.org/fhir/MolecularSequence/HLA-A-SequenceExample1"
+// * derivedFrom[hla-sequence].reference = "http://example.org/fhir/MolecularSequence/HLA-A-SequenceExample1"
+* derivedFrom[hla-sequence].reference = "MolecularSequence/HLA-A-SequenceExample1"
 // * derivedFrom.reference = HLA-A-SequenceExample1
 
 
@@ -58,7 +59,8 @@ Description: "Example of HLA-A allele HLA-A*01:02 using IMGT/HLA 3.25 nomenclatu
 * status = #final
 * valueCodeableConcept.coding.code = #hla#3.25.0#HLA-A*01:02
 * component[gene-studied].valueCodeableConcept = HLAGeneIDCS#HGNC:4931 "HLA-A"
-* derivedFrom[hla-sequence].reference = "http://example.org/fhir/MolecularSequence/HLA-A-SequenceExample2"
+// * derivedFrom[hla-sequence].reference = "http://example.org/fhir/MolecularSequence/HLA-A-SequenceExample2"
+* derivedFrom[hla-sequence].reference = "MolecularSequence/HLA-A-SequenceExample2"
 // * derivedFrom.reference = HLA-A-SequenceExample2
 
 
@@ -70,7 +72,8 @@ Description: "Example of HLA-B*57:01:01:01 allele using IMGT/HLA 3.25 nomenclatu
 * status = #final
 * valueCodeableConcept.coding.code = #hla#3.25.0#HLA-B*57:01:01:01
 * component[gene-studied].valueCodeableConcept = HLAGeneIDCS#HGNC:4932 "HLA-B"
-* derivedFrom[hla-sequence].reference = "http://example.org/fhir/MolecularSequence/HLA-B-SequenceExample1"
+// * derivedFrom[hla-sequence].reference = "http://example.org/fhir/MolecularSequence/HLA-B-SequenceExample1"
+* derivedFrom[hla-sequence].reference = "MolecularSequence/HLA-B-SequenceExample1"
 // * derivedFrom.reference = HLA-B-SequenceExample1
 
 Instance:   HLA-B-AlleleExample2
@@ -81,5 +84,6 @@ Description: "Example of HLA-B*15:01:01:01 allele using IMGT/HLA 3.25 nomenclatu
 * status = #final
 * valueCodeableConcept.coding.code = #hla#3.25.0#HLA-B*15:01:01:01
 * component[gene-studied].valueCodeableConcept = HLAGeneIDCS#HGNC:4932 "HLA-B"
-* derivedFrom[hla-sequence].reference = "http://example.org/fhir/MolecularSequence/HLA-B-SequenceExample2"
+// * derivedFrom[hla-sequence].reference = "http://example.org/fhir/MolecularSequence/HLA-B-SequenceExample2"
+* derivedFrom[hla-sequence].reference = "MolecularSequence/HLA-B-SequenceExample2"
 // * derivedFrom.reference = HLA-B-SequenceExample1

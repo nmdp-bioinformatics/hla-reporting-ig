@@ -1,0 +1,195 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HLAGeneIdVS",
+  "id": "hla-geneid-valueset",
+  "title": "HLA Gene Name Value Set",
+  "description": "HLA HGNC GeneIds Valueset",
+  "version": "0.0.1",
+  "url": "http://fhir.nmdp.org/ig/hla-reporting/ValueSet/hla-geneid-valueset",
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.genenames.org/geneId",
+        "concept": [
+          {
+            "code": "HGNC:4931",
+            "display": "HLA-A"
+          },
+          {
+            "code": "HGNC:4932",
+            "display": "HLA-B"
+          },
+          {
+            "code": "HGNC:4933",
+            "display": "HLA-C"
+          },
+          {
+            "code": "HGNC:4934",
+            "display": "HLA-DMA"
+          },
+          {
+            "code": "HGNC:4935",
+            "display": "HLA-DMB"
+          },
+          {
+            "code": "HGNC:4936",
+            "display": "HLA-DOA"
+          },
+          {
+            "code": "HGNC:4937",
+            "display": "HLA-DOB"
+          },
+          {
+            "code": "HGNC:4938",
+            "display": "HLA-DPA1"
+          },
+          {
+            "code": "HGNC:4939",
+            "display": "HLA-DPA2"
+          },
+          {
+            "code": "HGNC:19393",
+            "display": "HLA-DPA3"
+          },
+          {
+            "code": "HGNC:4940",
+            "display": "HLA-DPB1"
+          },
+          {
+            "code": "HGNC:4941",
+            "display": "HLA-DPB2"
+          },
+          {
+            "code": "HGNC:4942",
+            "display": "HLA-DQA1"
+          },
+          {
+            "code": "HGNC:4943",
+            "display": "HLA-DQA2"
+          },
+          {
+            "code": "HGNC:4944",
+            "display": "HLA-DQB1"
+          },
+          {
+            "code": "HGNC:4945",
+            "display": "HLA-DQB2"
+          },
+          {
+            "code": "HGNC:4946",
+            "display": "HLA-DQB3"
+          },
+          {
+            "code": "HGNC:4947",
+            "display": "HLA-DRA"
+          },
+          {
+            "code": "HGNC:4948",
+            "display": "HLA-DRB1"
+          },
+          {
+            "code": "HGNC:4950",
+            "display": "HLA-DRB2"
+          },
+          {
+            "code": "HGNC:4951",
+            "display": "HLA-DRB3"
+          },
+          {
+            "code": "HGNC:4952",
+            "display": "HLA-DRB4"
+          },
+          {
+            "code": "HGNC:4953",
+            "display": "HLA-DRB5"
+          },
+          {
+            "code": "HGNC:4954",
+            "display": "HLA-DRB6"
+          },
+          {
+            "code": "HGNC:4955",
+            "display": "HLA-DRB7"
+          },
+          {
+            "code": "HGNC:4956",
+            "display": "HLA-DRB8"
+          },
+          {
+            "code": "HGNC:4957",
+            "display": "HLA-DRB9"
+          },
+          {
+            "code": "HGNC:4962",
+            "display": "HLA-E"
+          },
+          {
+            "code": "HGNC:4963",
+            "display": "HLA-F"
+          },
+          {
+            "code": "HGNC:4964",
+            "display": "HLA-G"
+          },
+          {
+            "code": "HGNC:4965",
+            "display": "HLA-H"
+          },
+          {
+            "code": "HGNC:4967",
+            "display": "HLA-J"
+          },
+          {
+            "code": "HGNC:4969",
+            "display": "HLA-K"
+          },
+          {
+            "code": "HGNC:4970",
+            "display": "HLA-L"
+          },
+          {
+            "code": "HGNC:19406",
+            "display": "HLA-N"
+          },
+          {
+            "code": "HGNC:21196",
+            "display": "HLA-P"
+          },
+          {
+            "code": "HGNC:19395",
+            "display": "HLA-S"
+          },
+          {
+            "code": "HGNC:23478",
+            "display": "HLA-T"
+          },
+          {
+            "code": "HGNC:23477",
+            "display": "HLA-U"
+          },
+          {
+            "code": "HGNC:23482",
+            "display": "HLA-V"
+          },
+          {
+            "code": "HGNC:23425",
+            "display": "HLA-W"
+          },
+          {
+            "code": "HGNC:19385",
+            "display": "HLA-X"
+          },
+          {
+            "code": "HGNC:33913",
+            "display": "HLA-Y"
+          },
+          {
+            "code": "HGNC:19394",
+            "display": "HLA-Z"
+          }
+        ]
+      }
+    ]
+  }
+}

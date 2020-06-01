@@ -1,0 +1,213 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "hla-summary-report",
+  "url": "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-summary-report",
+  "version": "0.0.1",
+  "name": "HLASummaryReport",
+  "title": "HLA Summary Report",
+  "status": "active",
+  "description": "HLA Summary Report profile of genomics report",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2-cg-results",
+      "uri": "http://unknown.org/V2-CG-Results",
+      "name": "V2-CG-Results"
+    },
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "DiagnosticReport",
+  "baseDefinition": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-report",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DiagnosticReport.extension",
+        "path": "DiagnosticReport.extension",
+        "min": 1
+      },
+      {
+        "id": "DiagnosticReport.extension:RecommendedAction",
+        "path": "DiagnosticReport.extension",
+        "sliceName": "RecommendedAction",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.extension:GenotypeSummary",
+        "path": "DiagnosticReport.extension",
+        "sliceName": "GenotypeSummary",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-genotype-summary"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.code.coding",
+        "path": "DiagnosticReport.code.coding",
+        "min": 2
+      },
+      {
+        "id": "DiagnosticReport.code.coding:HLAGeneGroup",
+        "path": "DiagnosticReport.code.coding",
+        "sliceName": "HLAGeneGroup",
+        "max": "1"
+      },
+      {
+        "id": "DiagnosticReport.code.coding:HLAGeneGroup.system",
+        "path": "DiagnosticReport.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://www.genenames.org/genegroup"
+      },
+      {
+        "id": "DiagnosticReport.code.coding:HLAGeneGroup.code",
+        "path": "DiagnosticReport.code.coding.code",
+        "min": 1,
+        "fixedCode": "588"
+      },
+      {
+        "id": "DiagnosticReport.result:gen-grouper",
+        "path": "DiagnosticReport.result",
+        "sliceName": "gen-grouper",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.result:overall",
+        "path": "DiagnosticReport.result",
+        "sliceName": "overall",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.result:inh-dis-path",
+        "path": "DiagnosticReport.result",
+        "sliceName": "inh-dis-path",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.result:som-diagnostic",
+        "path": "DiagnosticReport.result",
+        "sliceName": "som-diagnostic",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.result:som-prognostic",
+        "path": "DiagnosticReport.result",
+        "sliceName": "som-prognostic",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.result:som-predictive",
+        "path": "DiagnosticReport.result",
+        "sliceName": "som-predictive",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.result:med-metabolism",
+        "path": "DiagnosticReport.result",
+        "sliceName": "med-metabolism",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.result:med-efficacy",
+        "path": "DiagnosticReport.result",
+        "sliceName": "med-efficacy",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.result:med-transporter",
+        "path": "DiagnosticReport.result",
+        "sliceName": "med-transporter",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.result:med-high-risk",
+        "path": "DiagnosticReport.result",
+        "sliceName": "med-high-risk",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.result:genotype",
+        "path": "DiagnosticReport.result",
+        "sliceName": "genotype",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.result:haplotype",
+        "path": "DiagnosticReport.result",
+        "sliceName": "haplotype",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.result:variant",
+        "path": "DiagnosticReport.result",
+        "sliceName": "variant",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.result:region-studied",
+        "path": "DiagnosticReport.result",
+        "sliceName": "region-studied",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.result:hla-genotype",
+        "path": "DiagnosticReport.result",
+        "sliceName": "hla-genotype",
+        "min": 0,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-genotype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.result:hla-allele",
+        "path": "DiagnosticReport.result",
+        "sliceName": "hla-allele",
+        "min": 0,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-allele"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.media",
+        "path": "DiagnosticReport.media",
+        "max": "0"
+      }
+    ]
+  }
+}

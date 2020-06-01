@@ -73,8 +73,10 @@ Description: "Example of HLA summary report"
 // * specimen.type = "Specimen"
 // * specimen.identifier.system = "http://example.org/myspecimen_identifiers"
 // * specimen.identifier.value = "6789"
-* result[0].reference = "http://example.org/fhir/Observation/HLA-A-GenotypeExample"
-* result[1].reference = "http://example.org/fhir/Observation/HLA-B-GenotypeExample"
+// * result[0].reference = "http://example.org/fhir/Observation/HLA-A-GenotypeExample"
+// * result[1].reference = "http://example.org/fhir/Observation/HLA-B-GenotypeExample"
+* result[0].reference = "Observation/HLA-A-GenotypeExample"
+* result[1].reference = "Observation/HLA-B-GenotypeExample"
 // * result[0].reference = HLA-A-GenotypeExample
 // * result[1].reference = HLA-B-GenotypeExample
 

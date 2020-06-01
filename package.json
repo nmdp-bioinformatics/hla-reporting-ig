@@ -1,6 +1,6 @@
 {
   "name": "hla-reporting",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "canonical": "http://fhir.nmdp.org/ig/hla-reporting",
   "url": "http://fhir.nmdp.org/ig/hla-reporting",
   "title": "HLA Reporting Implementation Guide",
