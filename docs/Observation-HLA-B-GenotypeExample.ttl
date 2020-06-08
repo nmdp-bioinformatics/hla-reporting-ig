@@ -1,0 +1,82 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/hla-reporting/Observation/HLA-B-GenotypeExample> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "HLA-B-GenotypeExample"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-genotype";
+       fhir:index 0;
+       fhir:link <http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-genotype>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: HLA-B-GenotypeExample</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'laboratory' = 'Laboratory)</span></p><p><b>code</b>: Genotype display name <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '84413-4' = 'Genotype display name)</span></p><p><b>value</b>: hla#3.25.0#HLA-B*57:01:01:01+HLA-B*15:01:01:01 <span style=\"background: LightGoldenRodYellow\">(Details : {http://glstring.org code 'hla#3.25.0#HLA-B*57:01:01:01+HLA-B*15:01:01:01' = 'hla#3.25.0#HLA-B*57:01:01:01+HLA-B*15:01:01:01)</span></p><p><b>derivedFrom</b>: </p><ul><li><a href=\"Observation-HLA-B-AlleleExample1.html\">Generated Summary: id: HLA-B-AlleleExample1; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>; <span title=\"Codes: {http://loinc.org 84414-2}\">Haplotype name</span>; <span title=\"Codes: {http://glstring.org hla#3.25.0#HLA-B*57:01:01:01}\">hla#3.25.0#HLA-B*57:01:01:01</span></a></li><li><a href=\"Observation-HLA-B-AlleleExample2.html\">Generated Summary: id: HLA-B-AlleleExample2; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>; <span title=\"Codes: {http://loinc.org 84414-2}\">Haplotype name</span>; <span title=\"Codes: {http://glstring.org hla#3.25.0#HLA-B*15:01:01:01}\">hla#3.25.0#HLA-B*15:01:01:01</span></a></li></ul><h3>Components</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Gene studied [ID] <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '48018-6' = 'Gene studied [ID])</span></td><td>HLA-B <span style=\"background: LightGoldenRodYellow\">(Details : {http://www.genenames.org/geneId code 'HGNC:4932' = 'HLA-B', given as 'HLA-B'})</span></td></tr></table></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "laboratory" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:84413-4;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "84413-4" ]
+     ]
+  ];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://glstring.org" ];
+       fhir:Coding.code [ fhir:value "hla#3.25.0#HLA-B*57:01:01:01+HLA-B*15:01:01:01" ]
+     ]
+  ];
+  fhir:Observation.derivedFrom [
+     fhir:index 0;
+     fhir:link <http://fhir.nmdp.org/ig/hla-reporting/Observation/HLA-B-AlleleExample1>;
+     fhir:Reference.reference [ fhir:value "Observation/HLA-B-AlleleExample1" ]
+  ], [
+     fhir:index 1;
+     fhir:link <http://fhir.nmdp.org/ig/hla-reporting/Observation/HLA-B-AlleleExample2>;
+     fhir:Reference.reference [ fhir:value "Observation/HLA-B-AlleleExample2" ]
+  ];
+  fhir:Observation.component [
+     fhir:index 0;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:48018-6;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "48018-6" ]
+       ]
+     ];
+     fhir:Observation.component.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://www.genenames.org/geneId" ];
+         fhir:Coding.code [ fhir:value "HGNC:4932" ];
+         fhir:Coding.display [ fhir:value "HLA-B" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/hla-reporting/Observation/HLA-B-GenotypeExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,48 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "HLA-AB-SummaryReportExample",
+  "meta": {
+    "profile": [
+      "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-summary-report"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: HLA-AB-SummaryReportExample</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>code</b>: Histocompatibility complex (HLA) <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '81247-9' = 'Master HL7 genetic variant reporting panel; {http://www.genenames.org/genegroup code '588' = '588', given as 'Histocompatibility complex (HLA)'})</span></p><p><b>result</b>: </p><ul><li><a href=\"Observation-HLA-A-GenotypeExample.html\">Generated Summary: id: HLA-A-GenotypeExample; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>; <span title=\"Codes: {http://loinc.org 84413-4}\">Genotype display name</span>; <span title=\"Codes: {http://glstring.org hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:02}\">hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:02</span></a></li><li><a href=\"Observation-HLA-B-GenotypeExample.html\">Generated Summary: id: HLA-B-GenotypeExample; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>; <span title=\"Codes: {http://loinc.org 84413-4}\">Genotype display name</span>; <span title=\"Codes: {http://glstring.org hla#3.25.0#HLA-B*57:01:01:01+HLA-B*15:01:01:01}\">hla#3.25.0#HLA-B*57:01:01:01+HLA-B*15:01:01:01</span></a></li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-genotype-summary",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://glstring.org",
+            "code": "hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:01:02^#HLA-B*57:01:01:01+HLA-B*15:01:01:01"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "81247-9"
+      },
+      {
+        "system": "http://www.genenames.org/genegroup",
+        "code": "588",
+        "display": "Histocompatibility complex (HLA)"
+      }
+    ]
+  },
+  "result": [
+    {
+      "reference": "Observation/HLA-A-GenotypeExample"
+    },
+    {
+      "reference": "Observation/HLA-B-GenotypeExample"
+    }
+  ]
+}

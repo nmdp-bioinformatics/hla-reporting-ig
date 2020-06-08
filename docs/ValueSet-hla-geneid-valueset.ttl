@@ -1,0 +1,222 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/hla-reporting/ValueSet/hla-geneid-valueset> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "hla-geneid-valueset"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HLA Gene Name Value Set</h2><div><p>HLA HGNC GeneIds Valueset</p>\n</div><ul><li>Include these codes as defined in <a href=\"CodeSystem-hla-genename-codesystem.html\"><code>http://www.genenames.org/geneId</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>HGNC:4931</td><td>HLA-A</td><td>major histocompatibility complex, class I, A</td></tr><tr><td>HGNC:4932</td><td>HLA-B</td><td>major histocompatibility complex, class I, B</td></tr><tr><td>HGNC:4933</td><td>HLA-C</td><td>major histocompatibility complex, class I, C</td></tr><tr><td>HGNC:4934</td><td>HLA-DMA</td><td>major histocompatibility complex, class II, DM alpha</td></tr><tr><td>HGNC:4935</td><td>HLA-DMB</td><td>major histocompatibility complex, class II, DM beta</td></tr><tr><td>HGNC:4936</td><td>HLA-DOA</td><td>major histocompatibility complex, class II, DO alpha</td></tr><tr><td>HGNC:4937</td><td>HLA-DOB</td><td>major histocompatibility complex, class II, DO beta</td></tr><tr><td>HGNC:4938</td><td>HLA-DPA1</td><td>major histocompatibility complex, class II, DP alpha 1</td></tr><tr><td>HGNC:4939</td><td>HLA-DPA2</td><td>major histocompatibility complex, class II, DP alpha 2 (pseudogene)</td></tr><tr><td>HGNC:19393</td><td>HLA-DPA3</td><td>major histocompatibility complex, class II, DP alpha 3 (pseudogene)</td></tr><tr><td>HGNC:4940</td><td>HLA-DPB1</td><td>major histocompatibility complex, class II, DP beta 1</td></tr><tr><td>HGNC:4941</td><td>HLA-DPB2</td><td>major histocompatibility complex, class II, DP beta 2 (pseudogene)</td></tr><tr><td>HGNC:4942</td><td>HLA-DQA1</td><td>major histocompatibility complex, class II, DQ alpha 1</td></tr><tr><td>HGNC:4943</td><td>HLA-DQA2</td><td>major histocompatibility complex, class II, DQ alpha 2</td></tr><tr><td>HGNC:4944</td><td>HLA-DQB1</td><td>major histocompatibility complex, class II, DQ beta 1</td></tr><tr><td>HGNC:4945</td><td>HLA-DQB2</td><td>major histocompatibility complex, class II, DQ beta 2</td></tr><tr><td>HGNC:4946</td><td>HLA-DQB3</td><td>major histocompatibility complex, class II, DQ beta 3</td></tr><tr><td>HGNC:4947</td><td>HLA-DRA</td><td>major histocompatibility complex, class II, DR alpha</td></tr><tr><td>HGNC:4948</td><td>HLA-DRB1</td><td>major histocompatibility complex, class II, DR beta 1</td></tr><tr><td>HGNC:4950</td><td>HLA-DRB2</td><td>major histocompatibility complex, class II, DR beta 2 (pseudogene)</td></tr><tr><td>HGNC:4951</td><td>HLA-DRB3</td><td>major histocompatibility complex, class II, DR beta 3</td></tr><tr><td>HGNC:4952</td><td>HLA-DRB4</td><td>major histocompatibility complex, class II, DR beta 4</td></tr><tr><td>HGNC:4953</td><td>HLA-DRB5</td><td>major histocompatibility complex, class II, DR beta 5</td></tr><tr><td>HGNC:4954</td><td>HLA-DRB6</td><td>major histocompatibility complex, class II, DR beta 6 (pseudogene)</td></tr><tr><td>HGNC:4955</td><td>HLA-DRB7</td><td>major histocompatibility complex, class II, DR beta 7 (pseudogene)</td></tr><tr><td>HGNC:4956</td><td>HLA-DRB8</td><td>major histocompatibility complex, class II, DR beta 8 (pseudogene)</td></tr><tr><td>HGNC:4957</td><td>HLA-DRB9</td><td>major histocompatibility complex, class II, DR beta 9 (pseudogene)</td></tr><tr><td>HGNC:4962</td><td>HLA-E</td><td>major histocompatibility complex, class I, E</td></tr><tr><td>HGNC:4963</td><td>HLA-F</td><td>major histocompatibility complex, class I, F</td></tr><tr><td>HGNC:4964</td><td>HLA-G</td><td>major histocompatibility complex, class I, G</td></tr><tr><td>HGNC:4965</td><td>HLA-H</td><td>major histocompatibility complex, class I, H (pseudogene)</td></tr><tr><td>HGNC:4967</td><td>HLA-J</td><td>major histocompatibility complex, class I, J (pseudogene)</td></tr><tr><td>HGNC:4969</td><td>HLA-K</td><td>major histocompatibility complex, class I, K (pseudogene)</td></tr><tr><td>HGNC:4970</td><td>HLA-L</td><td>major histocompatibility complex, class I, L (pseudogene)</td></tr><tr><td>HGNC:19406</td><td>HLA-N</td><td>major histocompatibility complex, class I, N (pseudogene)</td></tr><tr><td>HGNC:21196</td><td>HLA-P</td><td>major histocompatibility complex, class I, P (pseudogene)</td></tr><tr><td>HGNC:19395</td><td>HLA-S</td><td>major histocompatibility complex, class I, S (pseudogene)</td></tr><tr><td>HGNC:23478</td><td>HLA-T</td><td>major histocompatibility complex, class I, T (pseudogene)</td></tr><tr><td>HGNC:23477</td><td>HLA-U</td><td>major histocompatibility complex, class I, U (pseudogene)</td></tr><tr><td>HGNC:23482</td><td>HLA-V</td><td>major histocompatibility complex, class I, V (pseudogene)</td></tr><tr><td>HGNC:23425</td><td>HLA-W</td><td>major histocompatibility complex, class I, W (pseudogene)</td></tr><tr><td>HGNC:19385</td><td>HLA-X</td><td>major histocompatibility complex, class I, X (pseudogene)</td></tr><tr><td>HGNC:33913</td><td>HLA-Y</td><td>major histocompatibility complex, class I, Y (pseudogene)</td></tr><tr><td>HGNC:19394</td><td>HLA-Z</td><td>major histocompatibility complex, class I, Z (pseudogene)</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://fhir.nmdp.org/ig/hla-reporting/ValueSet/hla-geneid-valueset"];
+  fhir:ValueSet.version [ fhir:value "0.0.1"];
+  fhir:ValueSet.name [ fhir:value "HLAGeneIdVS"];
+  fhir:ValueSet.title [ fhir:value "HLA Gene Name Value Set"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2020-06-08T12:05:38-05:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "NMDP/Be The Match"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Bob Milius" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "mailto:bmilius@nmdp.org" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "HLA HGNC GeneIds Valueset"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://www.genenames.org/geneId" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:4931" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-A" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:4932" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-B" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:4933" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-C" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:4934" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-DMA" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:4935" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-DMB" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:4936" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-DOA" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:4937" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-DOB" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:4938" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-DPA1" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:4939" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-DPA2" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:19393" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-DPA3" ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:4940" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-DPB1" ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:4941" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-DPB2" ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:4942" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-DQA1" ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:4943" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-DQA2" ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:4944" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-DQB1" ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:4945" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-DQB2" ]
+       ], [
+         fhir:index 16;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:4946" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-DQB3" ]
+       ], [
+         fhir:index 17;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:4947" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-DRA" ]
+       ], [
+         fhir:index 18;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:4948" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-DRB1" ]
+       ], [
+         fhir:index 19;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:4950" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-DRB2" ]
+       ], [
+         fhir:index 20;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:4951" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-DRB3" ]
+       ], [
+         fhir:index 21;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:4952" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-DRB4" ]
+       ], [
+         fhir:index 22;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:4953" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-DRB5" ]
+       ], [
+         fhir:index 23;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:4954" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-DRB6" ]
+       ], [
+         fhir:index 24;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:4955" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-DRB7" ]
+       ], [
+         fhir:index 25;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:4956" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-DRB8" ]
+       ], [
+         fhir:index 26;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:4957" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-DRB9" ]
+       ], [
+         fhir:index 27;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:4962" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-E" ]
+       ], [
+         fhir:index 28;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:4963" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-F" ]
+       ], [
+         fhir:index 29;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:4964" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-G" ]
+       ], [
+         fhir:index 30;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:4965" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-H" ]
+       ], [
+         fhir:index 31;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:4967" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-J" ]
+       ], [
+         fhir:index 32;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:4969" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-K" ]
+       ], [
+         fhir:index 33;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:4970" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-L" ]
+       ], [
+         fhir:index 34;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:19406" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-N" ]
+       ], [
+         fhir:index 35;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:21196" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-P" ]
+       ], [
+         fhir:index 36;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:19395" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-S" ]
+       ], [
+         fhir:index 37;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:23478" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-T" ]
+       ], [
+         fhir:index 38;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:23477" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-U" ]
+       ], [
+         fhir:index 39;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:23482" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-V" ]
+       ], [
+         fhir:index 40;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:23425" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-W" ]
+       ], [
+         fhir:index 41;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:19385" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-X" ]
+       ], [
+         fhir:index 42;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:33913" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-Y" ]
+       ], [
+         fhir:index 43;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "HGNC:19394" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HLA-Z" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/hla-reporting/ValueSet/hla-geneid-valueset.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

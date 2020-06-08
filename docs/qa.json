@@ -1,0 +1,12 @@
+{
+  "url": "http://fhir.nmdp.org/ig/hla-reporting/ImplementationGuide/hla-reporting",
+  "name": "HLAReportingImplementationGuide",
+  "package-id": "hla-reporting",
+  "ig-ver": "0.0.1",
+  "date": "Mon, 08 Jun, 2020 12:05:38 -0500",
+  "errs": 0,
+  "warnings": 0,
+  "hints": 12,
+  "version": "4.0.1",
+  "tool": "4.4.0 (3)"
+}

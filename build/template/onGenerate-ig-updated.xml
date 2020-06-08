@@ -17,7 +17,7 @@
    <name value="HLAReportingImplementationGuide"/>
    <title value="HLA Reporting Implementation Guide"/>
    <status value="active"/>
-   <date value="2020-06-01T16:44:42-05:00"/>
+   <date value="2020-06-08T12:05:38-05:00"/>
    <publisher value="NMDP/Be The Match"/>
    <contact>
       <name value="Bob Milius"/>
@@ -479,14 +479,6 @@
       <parameter>
          <code value="show-inherited-invariants"/>
          <value value="false"/>
-      </parameter>
-      <parameter>
-         <code value="special-url"/>
-         <value value="http://www.genenames.com/geneId"/>
-      </parameter>
-      <parameter>
-         <code value="special-url"/>
-         <value value="http://glstring.org"/>
       </parameter>
       <parameter>
          <code value="path-resource"/>

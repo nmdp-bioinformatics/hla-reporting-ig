@@ -1,0 +1,30 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "glstring-codesystem",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Genotype List String Code CodeSystem</h2><div><p>Genotype List String Codesystem used for HLA reporting</p>\n</div><p><b>Copyright Statement:</b> National Marrow Donor Program</p><p>This code system http://www.glstring.org defines many codes, but they are not represented here</p></div>"
+  },
+  "url": "http://www.glstring.org",
+  "version": "0.0.1",
+  "name": "GLStringCS",
+  "title": "Genotype List String Code CodeSystem",
+  "status": "active",
+  "date": "2020-06-08T12:05:38-05:00",
+  "publisher": "NMDP/Be The Match",
+  "contact": [
+    {
+      "name": "Bob Milius",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:bmilius@nmdp.org"
+        }
+      ]
+    }
+  ],
+  "description": "Genotype List String Codesystem used for HLA reporting",
+  "copyright": "National Marrow Donor Program",
+  "compositional": true,
+  "content": "not-present"
+}

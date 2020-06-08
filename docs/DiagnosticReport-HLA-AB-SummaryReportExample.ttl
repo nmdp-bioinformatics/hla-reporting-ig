@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/hla-reporting/DiagnosticReport/HLA-AB-SummaryReportExample> a fhir:DiagnosticReport;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "HLA-AB-SummaryReportExample"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-summary-report";
+       fhir:index 0;
+       fhir:link <http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-summary-report>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: HLA-AB-SummaryReportExample</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>code</b>: Histocompatibility complex (HLA) <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '81247-9' = 'Master HL7 genetic variant reporting panel; {http://www.genenames.org/genegroup code '588' = '588', given as 'Histocompatibility complex (HLA)'})</span></p><p><b>result</b>: </p><ul><li><a href=\"Observation-HLA-A-GenotypeExample.html\">Generated Summary: id: HLA-A-GenotypeExample; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>; <span title=\"Codes: {http://loinc.org 84413-4}\">Genotype display name</span>; <span title=\"Codes: {http://glstring.org hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:02}\">hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:02</span></a></li><li><a href=\"Observation-HLA-B-GenotypeExample.html\">Generated Summary: id: HLA-B-GenotypeExample; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>; <span title=\"Codes: {http://loinc.org 84413-4}\">Genotype display name</span>; <span title=\"Codes: {http://glstring.org hla#3.25.0#HLA-B*57:01:01:01+HLA-B*15:01:01:01}\">hla#3.25.0#HLA-B*57:01:01:01+HLA-B*15:01:01:01</span></a></li></ul></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://fhir.nmdp.org/ig/hla-reporting/StructureDefinition/hla-genotype-summary" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://glstring.org" ];
+         fhir:Coding.code [ fhir:value "hla#3.25.0#HLA-A*01:01:01:01+HLA-A*01:01:02^#HLA-B*57:01:01:01+HLA-B*15:01:01:01" ]
+       ]
+     ]
+  ];
+  fhir:DiagnosticReport.status [ fhir:value "final"];
+  fhir:DiagnosticReport.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:81247-9;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "81247-9" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "http://www.genenames.org/genegroup" ];
+       fhir:Coding.code [ fhir:value "588" ];
+       fhir:Coding.display [ fhir:value "Histocompatibility complex (HLA)" ]
+     ]
+  ];
+  fhir:DiagnosticReport.result [
+     fhir:index 0;
+     fhir:link <http://fhir.nmdp.org/ig/hla-reporting/Observation/HLA-A-GenotypeExample>;
+     fhir:Reference.reference [ fhir:value "Observation/HLA-A-GenotypeExample" ]
+  ], [
+     fhir:index 1;
+     fhir:link <http://fhir.nmdp.org/ig/hla-reporting/Observation/HLA-B-GenotypeExample>;
+     fhir:Reference.reference [ fhir:value "Observation/HLA-B-GenotypeExample" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.nmdp.org/ig/hla-reporting/DiagnosticReport/HLA-AB-SummaryReportExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

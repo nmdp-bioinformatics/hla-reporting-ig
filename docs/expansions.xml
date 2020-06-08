@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="942fce07-0599-46c6-ae48-6cfc414b0656"/>
+  <meta>
+    <lastUpdated value="2020-06-08T12:05:38.901-05:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://fhir.nmdp.org/ig/hla-reporting/ValueSet/hla-geneid-valueset"/>
+    <resource>
+      <ValueSet>
+        <id value="hla-geneid-valueset"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 44 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-hla-genename-codesystem.html">HLA HGNC GeneID CodeSystem v0.0.1 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-hla-genename-codesystem.html">
+                <code>http://www.genenames.org/geneId</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-4931"> </a>HGNC:4931
+                </td>
+                <td>HLA-A</td>
+                <td>major histocompatibility complex, class I, A</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-4932"> </a>HGNC:4932
+                </td>
+                <td>HLA-B</td>
+                <td>major histocompatibility complex, class I, B</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-4933"> </a>HGNC:4933
+                </td>
+                <td>HLA-C</td>
+                <td>major histocompatibility complex, class I, C</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-4934"> </a>HGNC:4934
+                </td>
+                <td>HLA-DMA</td>
+                <td>major histocompatibility complex, class II, DM alpha</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-4935"> </a>HGNC:4935
+                </td>
+                <td>HLA-DMB</td>
+                <td>major histocompatibility complex, class II, DM beta</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-4936"> </a>HGNC:4936
+                </td>
+                <td>HLA-DOA</td>
+                <td>major histocompatibility complex, class II, DO alpha</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-4937"> </a>HGNC:4937
+                </td>
+                <td>HLA-DOB</td>
+                <td>major histocompatibility complex, class II, DO beta</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-4938"> </a>HGNC:4938
+                </td>
+                <td>HLA-DPA1</td>
+                <td>major histocompatibility complex, class II, DP alpha 1</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-4939"> </a>HGNC:4939
+                </td>
+                <td>HLA-DPA2</td>
+                <td>major histocompatibility complex, class II, DP alpha 2 (pseudogene)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-19393"> </a>HGNC:19393
+                </td>
+                <td>HLA-DPA3</td>
+                <td>major histocompatibility complex, class II, DP alpha 3 (pseudogene)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-4940"> </a>HGNC:4940
+                </td>
+                <td>HLA-DPB1</td>
+                <td>major histocompatibility complex, class II, DP beta 1</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-4941"> </a>HGNC:4941
+                </td>
+                <td>HLA-DPB2</td>
+                <td>major histocompatibility complex, class II, DP beta 2 (pseudogene)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-4942"> </a>HGNC:4942
+                </td>
+                <td>HLA-DQA1</td>
+                <td>major histocompatibility complex, class II, DQ alpha 1</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-4943"> </a>HGNC:4943
+                </td>
+                <td>HLA-DQA2</td>
+                <td>major histocompatibility complex, class II, DQ alpha 2</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-4944"> </a>HGNC:4944
+                </td>
+                <td>HLA-DQB1</td>
+                <td>major histocompatibility complex, class II, DQ beta 1</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-4945"> </a>HGNC:4945
+                </td>
+                <td>HLA-DQB2</td>
+                <td>major histocompatibility complex, class II, DQ beta 2</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-4946"> </a>HGNC:4946
+                </td>
+                <td>HLA-DQB3</td>
+                <td>major histocompatibility complex, class II, DQ beta 3</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-4947"> </a>HGNC:4947
+                </td>
+                <td>HLA-DRA</td>
+                <td>major histocompatibility complex, class II, DR alpha</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-4948"> </a>HGNC:4948
+                </td>
+                <td>HLA-DRB1</td>
+                <td>major histocompatibility complex, class II, DR beta 1</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-4950"> </a>HGNC:4950
+                </td>
+                <td>HLA-DRB2</td>
+                <td>major histocompatibility complex, class II, DR beta 2 (pseudogene)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-4951"> </a>HGNC:4951
+                </td>
+                <td>HLA-DRB3</td>
+                <td>major histocompatibility complex, class II, DR beta 3</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-4952"> </a>HGNC:4952
+                </td>
+                <td>HLA-DRB4</td>
+                <td>major histocompatibility complex, class II, DR beta 4</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-4953"> </a>HGNC:4953
+                </td>
+                <td>HLA-DRB5</td>
+                <td>major histocompatibility complex, class II, DR beta 5</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-4954"> </a>HGNC:4954
+                </td>
+                <td>HLA-DRB6</td>
+                <td>major histocompatibility complex, class II, DR beta 6 (pseudogene)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-4955"> </a>HGNC:4955
+                </td>
+                <td>HLA-DRB7</td>
+                <td>major histocompatibility complex, class II, DR beta 7 (pseudogene)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-4956"> </a>HGNC:4956
+                </td>
+                <td>HLA-DRB8</td>
+                <td>major histocompatibility complex, class II, DR beta 8 (pseudogene)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-4957"> </a>HGNC:4957
+                </td>
+                <td>HLA-DRB9</td>
+                <td>major histocompatibility complex, class II, DR beta 9 (pseudogene)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-4962"> </a>HGNC:4962
+                </td>
+                <td>HLA-E</td>
+                <td>major histocompatibility complex, class I, E</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-4963"> </a>HGNC:4963
+                </td>
+                <td>HLA-F</td>
+                <td>major histocompatibility complex, class I, F</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-4964"> </a>HGNC:4964
+                </td>
+                <td>HLA-G</td>
+                <td>major histocompatibility complex, class I, G</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-4965"> </a>HGNC:4965
+                </td>
+                <td>HLA-H</td>
+                <td>major histocompatibility complex, class I, H (pseudogene)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-4967"> </a>HGNC:4967
+                </td>
+                <td>HLA-J</td>
+                <td>major histocompatibility complex, class I, J (pseudogene)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-4969"> </a>HGNC:4969
+                </td>
+                <td>HLA-K</td>
+                <td>major histocompatibility complex, class I, K (pseudogene)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-4970"> </a>HGNC:4970
+                </td>
+                <td>HLA-L</td>
+                <td>major histocompatibility complex, class I, L (pseudogene)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-19406"> </a>HGNC:19406
+                </td>
+                <td>HLA-N</td>
+                <td>major histocompatibility complex, class I, N (pseudogene)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-21196"> </a>HGNC:21196
+                </td>
+                <td>HLA-P</td>
+                <td>major histocompatibility complex, class I, P (pseudogene)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-19395"> </a>HGNC:19395
+                </td>
+                <td>HLA-S</td>
+                <td>major histocompatibility complex, class I, S (pseudogene)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-23478"> </a>HGNC:23478
+                </td>
+                <td>HLA-T</td>
+                <td>major histocompatibility complex, class I, T (pseudogene)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-23477"> </a>HGNC:23477
+                </td>
+                <td>HLA-U</td>
+                <td>major histocompatibility complex, class I, U (pseudogene)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-23482"> </a>HGNC:23482
+                </td>
+                <td>HLA-V</td>
+                <td>major histocompatibility complex, class I, V (pseudogene)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-23425"> </a>HGNC:23425
+                </td>
+                <td>HLA-W</td>
+                <td>major histocompatibility complex, class I, W (pseudogene)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-19385"> </a>HGNC:19385
+                </td>
+                <td>HLA-X</td>
+                <td>major histocompatibility complex, class I, X (pseudogene)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-33913"> </a>HGNC:33913
+                </td>
+                <td>HLA-Y</td>
+                <td>major histocompatibility complex, class I, Y (pseudogene)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.genenames.org-geneId-HGNC-19394"> </a>HGNC:19394
+                </td>
+                <td>HLA-Z</td>
+                <td>major histocompatibility complex, class I, Z (pseudogene)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://fhir.nmdp.org/ig/hla-reporting/ValueSet/hla-geneid-valueset"/>
+        <version value="0.0.1"/>
+        <name value="HLAGeneIdVS"/>
+        <title value="HLA Gene Name Value Set"/>
+        <status value="active"/>
+        <date value="2020-06-08T12:05:38-05:00"/>
+        <publisher value="NMDP/Be The Match"/>
+        <contact>
+          <name value="Bob Milius"/>
+          <telecom>
+            <system value="email"/>
+            <value value="mailto:bmilius@nmdp.org"/>
+          </telecom>
+        </contact>
+        <description value="HLA HGNC GeneIds Valueset"/>
+        <expansion>
+          <identifier value="urn:uuid:96fe1d75-fd17-4454-88e1-1dc92cfacaa3"/>
+          <timestamp value="2020-06-08T12:05:53-05:00"/>
+          <total value="44"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://www.genenames.org/geneId|0.0.1"/>
+          </parameter>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:4931"/>
+            <display value="HLA-A"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:4932"/>
+            <display value="HLA-B"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:4933"/>
+            <display value="HLA-C"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:4934"/>
+            <display value="HLA-DMA"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:4935"/>
+            <display value="HLA-DMB"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:4936"/>
+            <display value="HLA-DOA"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:4937"/>
+            <display value="HLA-DOB"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:4938"/>
+            <display value="HLA-DPA1"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:4939"/>
+            <display value="HLA-DPA2"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:19393"/>
+            <display value="HLA-DPA3"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:4940"/>
+            <display value="HLA-DPB1"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:4941"/>
+            <display value="HLA-DPB2"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:4942"/>
+            <display value="HLA-DQA1"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:4943"/>
+            <display value="HLA-DQA2"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:4944"/>
+            <display value="HLA-DQB1"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:4945"/>
+            <display value="HLA-DQB2"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:4946"/>
+            <display value="HLA-DQB3"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:4947"/>
+            <display value="HLA-DRA"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:4948"/>
+            <display value="HLA-DRB1"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:4950"/>
+            <display value="HLA-DRB2"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:4951"/>
+            <display value="HLA-DRB3"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:4952"/>
+            <display value="HLA-DRB4"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:4953"/>
+            <display value="HLA-DRB5"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:4954"/>
+            <display value="HLA-DRB6"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:4955"/>
+            <display value="HLA-DRB7"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:4956"/>
+            <display value="HLA-DRB8"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:4957"/>
+            <display value="HLA-DRB9"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:4962"/>
+            <display value="HLA-E"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:4963"/>
+            <display value="HLA-F"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:4964"/>
+            <display value="HLA-G"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:4965"/>
+            <display value="HLA-H"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:4967"/>
+            <display value="HLA-J"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:4969"/>
+            <display value="HLA-K"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:4970"/>
+            <display value="HLA-L"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:19406"/>
+            <display value="HLA-N"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:21196"/>
+            <display value="HLA-P"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:19395"/>
+            <display value="HLA-S"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:23478"/>
+            <display value="HLA-T"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:23477"/>
+            <display value="HLA-U"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:23482"/>
+            <display value="HLA-V"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:23425"/>
+            <display value="HLA-W"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:19385"/>
+            <display value="HLA-X"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:33913"/>
+            <display value="HLA-Y"/>
+          </contains>
+          <contains>
+            <system value="http://www.genenames.org/geneId"/>
+            <code value="HGNC:19394"/>
+            <display value="HLA-Z"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

@@ -1,0 +1,62 @@
+﻿HLAReportingImplementationGuide : Validation Results
+=========================================
+
+err = 0, warn = 0, info = 12
+IG Publisher Version: v1.0.94-SNAPSHOT Out of date - current version is v1.0.100-SNAPSHOT
+Generated Mon Jun 08 12:06:07 CDT 2020. FHIR version 4.0.1 for hla-reporting#0.0.1 (canonical = http://fhir.nmdp.org/ig/hla-reporting)
+
+ Build Errors : 0 / 0
+ /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/ImplementationGuide-hla-reporting : 0 / 0
+ /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/examples/diagnosticreport-HLA-AB-SummaryReportExample : 3 / 2
+ /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/examples/molecularsequence-HLA-A-SequenceExample1 : 0 / 1
+ /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/examples/molecularsequence-HLA-A-SequenceExample2 : 0 / 1
+ /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/examples/molecularsequence-HLA-B-SequenceExample1 : 0 / 1
+ /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/examples/molecularsequence-HLA-B-SequenceExample2 : 0 / 1
+ /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/examples/observation-HLA-A-AlleleExample1 : 2 / 1
+ /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/examples/observation-HLA-A-AlleleExample2 : 2 / 1
+ /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/examples/observation-HLA-A-GenotypeExample : 5 / 1
+ /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/examples/observation-HLA-B-AlleleExample1 : 2 / 1
+ /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/examples/observation-HLA-B-AlleleExample2 : 2 / 1
+ /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/examples/observation-HLA-B-GenotypeExample : 5 / 1
+ /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/extensions/structuredefinition-hla-genotype-summary : 0 / 0
+ /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/profiles/structuredefinition-hla-allele : 0 / 0
+ /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/profiles/structuredefinition-hla-genotype : 0 / 0
+ /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/profiles/structuredefinition-hla-molecularsequence : 0 / 0
+ /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/profiles/structuredefinition-hla-summary-report : 0 / 0
+ /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/vocabulary/codesystem-glstring-codesystem : 0 / 0
+ /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/vocabulary/codesystem-hla-genename-codesystem : 0 / 0
+ /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/vocabulary/valueset-hla-geneid-valueset : 0 / 0
+</table>
+== n/a ==
+== /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/ImplementationGuide-hla-reporting.json ==
+== /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/examples/DiagnosticReport-HLA-AB-SummaryReportExample.json ==
+INFORMATION: DiagnosticReport/HLA-AB-SummaryReportExample: DiagnosticReport.extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI "http://glstring.org" is unknown so the code cannot be validated
+INFORMATION: DiagnosticReport/HLA-AB-SummaryReportExample: DiagnosticReport.code.coding[1]: Code System URI "http://www.genenames.org/genegroup" is unknown so the code cannot be validated
+== /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/examples/MolecularSequence-HLA-A-SequenceExample1.json ==
+INFORMATION: MolecularSequence/HLA-A-SequenceExample1: MolecularSequence.referenceSeq.referenceSeqId.coding[0]: Code System URI "http://www.ebi.ac.uk/ipd/imgt/hla" is unknown so the code cannot be validated
+== /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/examples/MolecularSequence-HLA-A-SequenceExample2.json ==
+INFORMATION: MolecularSequence/HLA-A-SequenceExample2: MolecularSequence.referenceSeq.referenceSeqId.coding[0]: Code System URI "http://www.ebi.ac.uk/ipd/imgt/hla" is unknown so the code cannot be validated
+== /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/examples/MolecularSequence-HLA-B-SequenceExample1.json ==
+INFORMATION: MolecularSequence/HLA-B-SequenceExample1: MolecularSequence.referenceSeq.referenceSeqId.coding[0]: Code System URI "http://www.ebi.ac.uk/ipd/imgt/hla" is unknown so the code cannot be validated
+== /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/examples/MolecularSequence-HLA-B-SequenceExample2.json ==
+INFORMATION: MolecularSequence/HLA-B-SequenceExample2: MolecularSequence.referenceSeq.referenceSeqId.coding[0]: Code System URI "http://www.ebi.ac.uk/ipd/imgt/hla" is unknown so the code cannot be validated
+== /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/examples/Observation-HLA-A-AlleleExample1.json ==
+INFORMATION: Observation/HLA-A-AlleleExample1: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI "http://glstring.org" is unknown so the code cannot be validated
+== /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/examples/Observation-HLA-A-AlleleExample2.json ==
+INFORMATION: Observation/HLA-A-AlleleExample2: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI "http://glstring.org" is unknown so the code cannot be validated
+== /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/examples/Observation-HLA-A-GenotypeExample.json ==
+INFORMATION: Observation/HLA-A-GenotypeExample: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI "http://glstring.org" is unknown so the code cannot be validated
+== /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/examples/Observation-HLA-B-AlleleExample1.json ==
+INFORMATION: Observation/HLA-B-AlleleExample1: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI "http://glstring.org" is unknown so the code cannot be validated
+== /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/examples/Observation-HLA-B-AlleleExample2.json ==
+INFORMATION: Observation/HLA-B-AlleleExample2: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI "http://glstring.org" is unknown so the code cannot be validated
+== /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/examples/Observation-HLA-B-GenotypeExample.json ==
+INFORMATION: Observation/HLA-B-GenotypeExample: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI "http://glstring.org" is unknown so the code cannot be validated
+== /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/extensions/StructureDefinition-hla-genotype-summary.json ==
+== /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/profiles/StructureDefinition-hla-allele.json ==
+== /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/profiles/StructureDefinition-hla-genotype.json ==
+== /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/profiles/StructureDefinition-hla-molecularsequence.json ==
+== /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/profiles/StructureDefinition-hla-summary-report.json ==
+== /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/vocabulary/CodeSystem-glstring-codesystem.json ==
+== /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/vocabulary/CodeSystem-hla-genename-codesystem.json ==
+== /Users/scollins/cibmtr-igs/hla-reporting-ig/build/input/vocabulary/ValueSet-hla-geneid-valueset.json ==
